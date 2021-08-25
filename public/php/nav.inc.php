@@ -19,15 +19,17 @@
 
         <div class="nav-container">
             <div class="brand">
-                <h1 class="brand-title">Lashes & Brows</h1>
-                <p class="brand-subtitle">BY MANDI</p>
+                <a href="index.php">
+                    <h1 class="brand-title">Lashes & Brows</h1>
+                    <p class="brand-subtitle">BY MANDI</p>
+                </a>
             </div>
 
 
             <ul class="nav-links">
-                <li class="nav-link"><a href="#">Home</a></li>
+                <li class="nav-link"><a href="index.php">Home</a></li>
                 <li class="nav-link"><a href="#">About</a></li>
-                <li class="nav-link"><a href="#">Prices</a></li>
+                <li class="nav-link"><a href="prices.php">Prices</a></li>
                 <li class="nav-link"><a href="#">Contact</a></li>
             </ul>
 

@@ -5,7 +5,9 @@ nav{
     position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-
+a{
+    text-decoration: none;
+}
 }
 
 .nav-container{
@@ -31,6 +33,7 @@ nav{
     margin-top: -0.75rem;
     font-size: 0.9rem;
     letter-spacing: 2px;
+    color: black;
 }
 
 .nav-links{

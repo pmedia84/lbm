@@ -7,7 +7,7 @@
 
 
 
-    <main>
+    <header>
         <section class="hero containerfw">
             <div class="container herogrid">
                 <h2 class="herotitle">Eyelash Extensions</h2>
@@ -16,7 +16,8 @@
                 <a href="#" class="btn herobtn">Find Out More</a>
             </div>
         </section>
-
+    </header>
+        <main>
         <section class="container">
             <div class="banner">
                 <h1 class="bannertitle">Professional Eyelash Extensions</h1>
