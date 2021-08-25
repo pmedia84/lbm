@@ -51,8 +51,17 @@ body {
   font-family: "Playfair Display", serif;
 }
 
+.herotitle {
+  font-size: 2.5rem;
+}
+
+.herotext {
+  font-size: 1.5rem;
+}
+
 nav {
   background-color: #fce8e7;
+  box-shadow: 0px 5px 5px white;
   padding: 0.25rem 0 0.25rem 0;
   height: 80px;
   position: -webkit-sticky;
@@ -170,7 +179,7 @@ nav a {
 
 .btn {
   width: 10em;
-  padding: 1rem 0.75rem;
+  padding: 0.25em 1em;
   background-color: #9e6a5b;
   text-align: center;
   text-transform: uppercase;
@@ -223,6 +232,52 @@ nav a {
   padding: 2rem;
   color: #9e6a5b;
   width: 100%;
+}
+
+.pricelist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+}
+
+.pricecard {
+  border: 1px solid #9e6a5b;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  color: #805d54;
+}
+
+.pricecard-body {
+  padding: 1.5rem;
+}
+
+.pricecard-price, .pricecard-title, .pricecard-text, .pricecard-price-subtitle {
+  padding: 1.5rem 0 1.5rem 0;
+  text-align: center;
+}
+
+.pricecard-title {
+  background-color: rgba(252, 232, 231, 0.4);
+  font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.pricecard-price {
+  color: #E66D4C;
+  font-size: 2.5rem;
+  font-family: "Pinyon Script", cursive;
+}
+
+.pricecard-price-subtitle {
+  padding-top: 0;
+}
+
+.pricecard-text {
+  line-height: 1.9;
+  font-family: "Montserrat", sans-serif;
 }
 
 .mos--img {
@@ -335,7 +390,7 @@ footer table {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 10vh 0 10vh 0;
+  padding: 2.5vh;
   background-color: #F3C6C4;
   background-blend-mode: multiply;
   color: #ffecd1;
@@ -344,7 +399,8 @@ footer table {
 .herogrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 50px;
+  row-gap: 0.9rem;
 }
 
 .herotitle {
@@ -359,7 +415,13 @@ footer table {
 
 .herobtn {
   grid-column: 1/2;
-  grid-row: 4;
+  grid-row: 4/4;
+}
+
+.pricehero {
+  background-image: url("../img/price-hero.jpg");
+  background-color: #fce8e7;
+  max-height: 30vh;
 }
 
 .banner {

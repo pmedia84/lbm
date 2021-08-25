@@ -1,7 +1,7 @@
 .btn{
     
     width: 10em;
-    padding: 1rem .75rem;
+    padding: 0.25em 1em;
     background-color: $primarycol;
     text-align: center;
     text-transform: uppercase;
@@ -54,4 +54,53 @@
     padding: 2rem;
     color: $primarycol;
     width: 100%;
+}
+
+
+//PriceList Container
+.pricelist{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+      column-gap: 1.5rem;
+      row-gap: 1.5rem;
+  }
+// Price Cards
+
+.pricecard{
+    border: 1px solid $primarycol;
+    border-radius: .25rem;
+    display: flex;
+    flex-direction: column;
+    color: $pricecardtext;
+}
+
+
+.pricecard-body{
+    padding: 1.5rem;
+}
+
+.pricecard-price, .pricecard-title, .pricecard-text, .pricecard-price-subtitle{
+    padding: 1.5rem 0 1.5rem 0;
+    text-align: center;
+}
+.pricecard-title{
+    background-color: rgba($secondcol, 0.4);
+    font-size: 1.25rem;
+    font-family: $sanserif;
+    text-transform: uppercase;
+}
+.pricecard-price{
+    
+    color: $highlighttext;
+
+    font-size: 2.5rem;
+    font-family: $handwriting;
+}
+.pricecard-price-subtitle{
+    padding-top: 0;
+}
+
+.pricecard-text{
+    line-height: 1.9;
+    font-family: $sanserif;
 }
