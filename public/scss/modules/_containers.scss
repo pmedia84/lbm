@@ -1,0 +1,34 @@
+//main content container
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding:3rem 0 3rem 0;
+}
+
+// full width container
+.containerfw{
+width: 100%;
+
+}
+
+.nav-container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.pinkbg{
+    background-color: $secondcol;
+}
+
+.staff-container{
+    h1, p{
+        margin:0.5rem 0 0.5rem 0;
+    }
+    h1{
+        letter-spacing: 2px;
+    }
+    p{
+        line-height: 1.5;
+    }
+}

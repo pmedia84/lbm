@@ -1,0 +1,57 @@
+.btn{
+    
+    width: 10em;
+    padding: 1rem .75rem;
+    background-color: $primarycol;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    border-radius: 0.25rem;
+    border:1px solid $secondcol;
+    text-decoration: none;
+    color: $secondcol;
+    &:hover{
+        opacity: 0.9;
+    }
+    &:active{
+        opacity:0.9;
+    }
+}
+
+.banner{
+    padding:2rem 0 2rem 0;
+}
+
+.card{
+    position: relative;
+    z-index: -1;
+    max-width: 500px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    img{
+        vertical-align: middle;
+        width: 500px;
+        height:350px;
+        object-fit: cover;
+    }
+}
+@media (min-width:768px){
+    .cardcontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1.5rem;
+        
+    }
+
+    .card img{
+        height: 300px;
+    }
+}
+.cardtext{
+    position: absolute;
+    bottom: 0;
+    background: rgba($secondcol,0.7);
+    padding: 2rem;
+    color: $primarycol;
+    width: 100%;
+}

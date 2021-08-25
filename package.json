@@ -1,0 +1,27 @@
+{
+  "name": "lbm",
+  "version": "1.0.0",
+  "description": "Lashes &amp; Brows by Mandi",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/code/index.html",
+    "build": "parcel build src/code/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmedia84/lbm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmedia84/lbm/issues"
+  },
+  "homepage": "https://github.com/pmedia84/lbm#readme",
+  "devDependencies": {
+    "sass": "^1.38.0"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.9.4"
+  }
+}

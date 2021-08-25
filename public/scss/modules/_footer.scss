@@ -1,0 +1,96 @@
+footer{
+    background-color: $secondcol;
+    h3{
+        margin-bottom: 0.5rem;
+        
+    }
+}
+
+.footer{
+    
+    min-height: 25vh;
+}
+
+.footer .brand{
+    display: none;
+}
+
+.contact-title{
+    text-align: center;
+}
+
+.contactdetails{
+    margin-bottom: 1.5rem;
+    ul{
+        line-height: 1.7;
+    }
+    li{
+        letter-spacing: 1.25px;
+        font-size: 1rem;
+    }
+    .fa-li{
+        color: $primarycol;
+    }
+}
+
+.openinghrs{
+    p{
+        margin-bottom: 0.5rem;
+    }
+    .day{
+        font-family: $sanserif;
+        font-size: 1.25;
+        font-weight: 400;
+    }
+}
+
+footer table{
+    width: 100%;
+}
+
+@media (min-width:860px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr  1fr;
+        grid-template-rows: 1fr 50px;
+        
+    }
+    .footer .brand{
+        width: 100%;
+        display: block;
+        grid-column: 2/3;
+        grid-row:1/2;
+        justify-self: center;
+    }
+    footer .social{
+        width: 100%;
+        justify-self: center;
+        color: red;
+        grid-row: 2/3;
+        grid-column: 1/4;
+        i{
+            margin:0 2rem 0 2rem;
+        }
+    
+        
+    }
+    .footer .openinghrs{
+        grid-column:3/4 ;
+    }
+    .footer-social:before,.footer-social:after{
+        content: "";
+        background-color: $primarycol;
+        height: 2px;
+        width: 100%;
+        position: relative;
+        top:50%;
+    }
+
+    .footer-social:before{
+        left: -20px;
+    }
+
+    .footer-social:after{
+        right: -20px;
+    }
+}
