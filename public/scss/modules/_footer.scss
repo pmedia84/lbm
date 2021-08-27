@@ -19,6 +19,8 @@ footer{
 }
 
 .contactdetails{
+    width: 95%;
+    margin: 0 auto;
     margin-bottom: 1.5rem;
     ul{
         line-height: 1.7;
@@ -32,19 +34,27 @@ footer{
     }
 }
 
+
 .openinghrs{
+    .opentitle{
+        text-align: center;
+    }
+    width: 95%;
+    margin: 0 auto;
+    
     p{
         margin-bottom: 0.5rem;
     }
     .day{
         font-family: $sanserif;
-        font-size: 1.25;
+        font-size: 1rem;
         font-weight: 400;
     }
 }
 
-footer table{
+.openinghrs table{
     width: 100%;
+    margin: 0 auto;
 }
 
 @media (min-width:860px){

@@ -40,18 +40,35 @@ a{
 .nav-links{
     list-style-type: none;
     display: flex;
-    width: 30%;
+    width: 40%;
    justify-content: space-between;
 
    a{
+        height: 100%;
+        position: relative;
        color: $primarycol;
        text-decoration: none;
        letter-spacing: 2px;
        font-size: 1.25rem;
    }
-   a:hover{
+   a::after{
+       content: "";
+       position: absolute;
+       bottom: 0px;
+       left: 0;
+       width: 100%;
+       height: 1.5px;
+    background-color: $primarycol;
        opacity: 0.8;
+       transform:scaleX(0);
+       transform-origin: center;
+
+       transition: transform 350ms ease;
    }
+  a:hover::after, a:focus::after{
+    transform:scaleX(1);
+  }
+   
 }
 
 

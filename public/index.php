@@ -20,9 +20,9 @@
         <main>
         <section class="container">
             <div class="banner">
-                <h1 class="bannertitle">Professional Eyelash Extensions</h1>
-                <h3 class="bannersubtitle">I Love making you look and feel amazing...</h3>
-                <p class="bannertext">Transform your Eyelashes to be fuller, longer and curlier for a sensational look...</p>
+                <h1 class="bannertitle m-b-1">Professional Eyelash Extensions</h1>
+                <h3 class="bannersubtitle m-b-1">I Love making you look and feel amazing...</h3>
+                <p class="bannertext m-b-1">Transform your Eyelashes to be fuller, longer and curlier for a sensational look...</p>
             </div>
 
             <div class="cardcontainer">
@@ -51,8 +51,8 @@
         </section>
 
         <section>
-            <div class="banner">
-                <h1 class="bannertitle">About Me</h1>
+            <div class="banner container p-top-0">
+                <h1 class="bannertitle m-b-0">About Me</h1>
             </div>
             <div class="containerfw pinkbg">
                 <div class="container">
@@ -66,18 +66,31 @@
                         </div>
                         <div class="social staff-social">
                         <?php include("php/socials.inc.php"); ?>
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </section>
-        <div class="banner">
-            <h1 class="bannertitle">Some of my work...</h1>
+
+        <section>
+        <div class="container banner p-top-1">
+            <h1 class="bannertitle m-b-0">Some of my work...</h1>
         </div>
-        <section class="mosaic">
+        
             <?php include("php/mosaic.inc.php"); ?>
         </section>
+
+
+        <section class="container">
+            <div class="banner p-bt-1">
+                <h1 class="bannertitle">Testimonials</h1>
+            </div>
+
+            <?php include("php/testimonials.inc.php");?>
+
+        </section>
+
     </main>
 
     <?php include("php/footer.inc.php"); ?>

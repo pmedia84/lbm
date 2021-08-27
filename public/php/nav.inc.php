@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="stylesheet" href="css/styles.css">
+<meta name="theme-color" content="#fce8e7">
 <script src="https://kit.fontawesome.com/3318fdaaaf.js" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,7 +11,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="manifest" href="site.webmanifest">
-
+<link rel="stylesheet" href="css/flickity.css">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -30,7 +31,7 @@
                 <li class="nav-link"><a href="index.php">Home</a></li>
                 <li class="nav-link"><a href="#">About</a></li>
                 <li class="nav-link"><a href="prices.php">Prices</a></li>
-                <li class="nav-link"><a href="#">Contact</a></li>
+                <li class="nav-link"><a href="contact.php">Contact</a></li>
             </ul>
 
             <div class="burger">

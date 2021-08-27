@@ -1,0 +1,74 @@
+.carousel{
+    width: 95%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.carousel-item{
+    width: 100%; /* full width */
+    height: 250px; /* height of carousel */
+    margin-right: 10px;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+  ////// Carousel Settings ///////
+
+/* smaller, dark, rounded square */
+.flickity-button {
+    background: #333;
+  }
+  .flickity-button:hover {
+    background: #F90;
+  }
+  
+  .flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  /* icon color */
+  .flickity-button-icon {
+    fill: white;
+  }
+ 
+  /* position dots in carousel */
+.flickity-page-dots {
+    bottom: 0px;
+  }
+  /* white circles */
+  .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: $primarycol;
+    border: 2px solid white;
+  }
+  /* fill-in selected dot */
+  .flickity-page-dots .dot.is-selected {
+    background: white;
+    border: 2px solid $primarycol;
+  }
+
+  /* carousel height */
+.carousel {
+    height: 100%;
+  }
+  
+  /* cell inherit height from carousel */
+  .carousel-cell {
+    height: 100%;
+  }
+
+  .flickity-prev-next-button.next, .flickity-prev-next-button.previous{
+      display: none;
+  }

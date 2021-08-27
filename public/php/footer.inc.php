@@ -20,11 +20,11 @@
         </div>
 
         <div class="openinghrs">
-            <div class="openinghrs">
+            <div>
                 <h3 class="opentitle">Salon Opening Hours</h3>
             
             </div>
-            <table class="openinghrs">
+            <table>
                 <tr>
             <td class="day">Monday - Wednesday</td>
             <td class="hrs">09:00 - 17:00</td>
@@ -66,6 +66,7 @@
 </footer>
 
 <script src="js/nav.js"></script>
+<script src="js/flickity.pkgd.min.js"> </script>
 </body>
 
 </html>

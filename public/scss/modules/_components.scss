@@ -1,31 +1,37 @@
 .btn{
-    
-    width: 10em;
     padding: 0.25em 1em;
-    background-color: $primarycol;
+    background-color: $secondcol;
     text-align: center;
-    text-transform: uppercase;
     font-size: 1.25rem;
     border-radius: 0.25rem;
-    border:1px solid $secondcol;
     text-decoration: none;
-    color: $secondcol;
+    color: $primarycol;
+    border: 1px solid $primarycol;
     &:hover{
         opacity: 0.9;
     }
     &:active{
         opacity:0.9;
     }
+    &:focus{ /*Input Focus Settings*/
+      outline: none;
+      box-shadow: 0 0 2pt 1pt $focuscolor;
+      transition: box-shadow 250ms ease;
+    }
 }
 
-.banner{
-    padding:2rem 0 2rem 0;
+
+.herobtn{
+  
+  text-transform: uppercase;
+  border:1px solid $secondcol;
 }
 
 .card{
     position: relative;
     z-index: -1;
     max-width: 500px;
+    margin: 0 auto;
     margin-bottom: 1rem;
     margin-top: 1rem;
     img{
@@ -35,8 +41,11 @@
         object-fit: cover;
     }
 }
+
+
 @media (min-width:768px){
     .cardcontainer{
+      
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 1.5rem;
@@ -60,7 +69,7 @@
 //PriceList Container
 .pricelist{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
       column-gap: 1.5rem;
       row-gap: 1.5rem;
   }
@@ -76,24 +85,25 @@
 
 
 .pricecard-body{
-    padding: 1.5rem;
+    padding: 1.25rem;
 }
 
 .pricecard-price, .pricecard-title, .pricecard-text, .pricecard-price-subtitle{
-    padding: 1.5rem 0 1.5rem 0;
+    padding: 1.25rem 0 1.25rem 0;
     text-align: center;
 }
 .pricecard-title{
     background-color: rgba($secondcol, 0.4);
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-family: $sanserif;
+    line-height: 0.9;
     text-transform: uppercase;
 }
 .pricecard-price{
     
     color: $highlighttext;
 
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: $handwriting;
 }
 .pricecard-price-subtitle{
@@ -101,6 +111,127 @@
 }
 
 .pricecard-text{
-    line-height: 1.9;
+    line-height: 1.35;
     font-family: $sanserif;
+}
+
+
+.banner{
+    
+    
+    text-align: center;
+   
+    h1{
+        font-size: 2.5rem;
+    }
+    h3, p{
+        font-family: $sanserif;
+        font-weight: 400;
+    }
+}
+
+
+/// Form Control Styles
+
+
+
+
+.form-text{
+    display: none;
+  }
+  .inputwrapper{/*Input Flex Container*/
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  .input-prepend{ /*Input Icon Helper*/
+    width: 40px;
+    height: 38px;
+    padding:1rem 1rem;
+    color: $primarycol;
+    background-color: $secondcol;
+  border: 1px solid $primarycol;
+  border-right: 0;
+  border-radius: 0.25rem 0 0 0.25rem;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  
+  }
+  
+  .input{ /*Basic Input field Settings for all form boxes*/
+   
+    padding:.375rem .75rem;
+    font-family: $sanserif;
+    border: 1px solid $primarycol;
+  }
+  
+  .textarea{
+    width: 100%;
+    height: 150px;
+    padding:.375rem .75rem;
+    resize: none;
+    border-radius: 0.25rem;
+  }
+  
+  .input:focus{ /*Input Focus Settings*/
+    outline: none;
+    box-shadow: 0 0 2pt 1pt $focuscolor;
+      transition: box-shadow 250ms ease;
+  }
+  
+  .text-input{ /*Text Box Input Settings*/
+    
+    flex-grow: 1;
+    width: 100%;
+    
+    border-radius: 0 0.25rem 0.25rem 0;
+  }
+  
+  .email-input{ /*email  Input Settings*/
+    
+    flex-grow: 1;
+    width: 100%;
+    border-radius: 0 0.25rem 0.25rem 0;
+  }
+  
+  .formrow{
+    margin-bottom: 1rem;
+  }
+  
+  .formcolumn{
+    
+    width: 100%;
+    padding: 0 5px 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+    
+  }
+  
+  .formsubmit{
+    padding-top: 0;
+    padding-bottom: 1em;
+  }
+
+
+  @media (min-width:768px){
+    
+  .formrow{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  
+}
+
+.formcolumn{
+justify-content: space-between;
+}
+
+.inputwrapper{
+margin-bottom: 0%;
+}
+
+
 }

@@ -28,8 +28,9 @@
 
 }
 .herobtn{
-    grid-column: 1/2;
+    grid-column: 1/4;
     grid-row: 4/4;
+    justify-self: start;
 }
 
 // Price List Page
@@ -39,3 +40,12 @@
     background-color: $secondcol;
     max-height: 30vh;
 }
+
+// Contact Page
+
+.contacthero{
+    background-image: url("../img/contact-hero.jpg");
+    //background-color: $secondcol;
+    max-height: 30vh;
+}
+
