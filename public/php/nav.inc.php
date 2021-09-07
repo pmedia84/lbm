@@ -1,8 +1,9 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="theme-color" content="#fce8e7">
-<script src="https://kit.fontawesome.com/3318fdaaaf.js" crossorigin="anonymous"></script>
+<meta name="theme-color" content="#fce8e7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +14,7 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="stylesheet" href="css/flickity.css">
 <link rel="stylesheet" href="css/styles.css">
+<script src="https://kit.fontawesome.com/3318fdaaaf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,10 +30,10 @@
 
 
             <ul class="nav-links">
-                <li class="nav-link"><a href="index.php">Home</a></li>
-                <li class="nav-link"><a href="#">About</a></li>
-                <li class="nav-link"><a href="prices.php">Prices</a></li>
-                <li class="nav-link"><a href="contact.php">Contact</a></li>
+                <li class="nav-link"><a href="index">Home</a></li>
+                <li class="nav-link"><a href="about">About</a></li>
+                <li class="nav-link"><a href="prices">Prices</a></li>
+                <li class="nav-link"><a href="contact">Contact</a></li>
             </ul>
 
             <div class="burger">
