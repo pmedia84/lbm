@@ -14,7 +14,7 @@
         </section>
     </header>
 <section class="container banner">
-    <h1 class="bannertitle m-b-1">Please feel free to get on touch with me</h1>
+    <h1 class="bannertitle m-b-1">Please feel free to get in touch with me</h1>
     <p class="bannertext m-b-0">I Love To Hear from you...</p>
 </section>
     <section id="contact" class="contact container p-top-0">
@@ -65,7 +65,7 @@
                         <div class="formrow formsubmit">
                             <div class="formcolumn">
                                 <!-- recaptcha -->
-                                <div id="validation" class="g-recaptcha text-center" data-sitekey="6Lc1c4MbAAAAAAx3fQiavVV7ZXbbbxHnRZexFO9l"></div>
+                                <div id="validation" class="g-recaptcha text-center" data-sitekey="6LfvLVMcAAAAANjPyv7P4WUyKJRiSQfu72ZGqZ8s"></div>
                                 <div id="success"></div>
                                 <div id="submit">
                                     <button class="btn" id="sendMessageButton" type="submit">Send Message</button>
@@ -76,6 +76,8 @@
                     </div>
                 
             </form>
+
+
         </div>
 
 
@@ -86,6 +88,10 @@
 
 
     </section>
+
+    <div class="containerfw">
+        <?php include("php/map.inc.php");?>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>

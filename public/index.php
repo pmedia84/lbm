@@ -13,7 +13,7 @@
                 <h2 class="herotitle">Eyelash Extensions</h2>
                 <p class="herotext">Semi Permanent Eyelash Extensions Offering Beautiful Handmade Russian Volume and Classic Style Individual Lash Extensions.</p>
 
-                <a href="#" class="btn herobtn">Find Out More</a>
+                <a href="contact" class="btn herobtn">Contact me</a>
             </div>
         </section>
     </header>

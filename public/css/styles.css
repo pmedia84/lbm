@@ -66,6 +66,23 @@ body::-webkit-scrollbar-thumb {
   line-height: 1.5;
 }
 
+@media (min-width: 768px) {
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .firstitem {
+    grid-column: 1/2;
+    grid-row: 1/1;
+  }
+
+  .seconditem {
+    grid-column: 2/3;
+    grid-row: 1/1;
+  }
+}
 body {
   font-family: "Playfair Display", serif;
 }
@@ -76,6 +93,10 @@ body {
 
 .herotext {
   font-size: 1.5rem;
+}
+
+.content {
+  font-family: "Montserrat", sans-serif;
 }
 
 nav {
@@ -236,7 +257,11 @@ nav a {
 
 .herobtn {
   text-transform: uppercase;
+  font-size: 1.75rem;
   border: 1px solid #fce8e7;
+}
+.herobtn:focus {
+  box-shadow: 0 0 2pt 1pt #f3e7e7;
 }
 
 .card {
@@ -540,6 +565,46 @@ footer h3 {
     right: -20px;
   }
 }
+/*Parrot Media Branding on Footer */
+.pmbrand {
+  grid-column: 1/4;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+.pmbrand a {
+  text-decoration: none;
+}
+
+.pm-branding {
+  color: #2fa6d6;
+  font-size: 0.8rem;
+}
+
+.parrotname {
+  color: #78b5a3;
+}
+
+.medianame {
+  color: #a2a2a2;
+}
+
+.parrotname,
+.medianame {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/*=========================================*/
+.copyright {
+  color: #9e6a5b;
+  font-size: 1.25rem;
+  font-family: "Pinyon Script", cursive;
+}
+.copyright i {
+  font-size: 1rem;
+}
+
 .hero {
   background-image: url("../img/eyes.jpg");
   background-size: cover;
@@ -585,11 +650,20 @@ footer h3 {
   max-height: 30vh;
 }
 
+.abouthero {
+  background-image: url("../img/about-hero.jpg");
+  max-height: 30vh;
+}
+
 .p-top-0 {
   padding-top: 0;
 }
 
 .p-top-1 {
+  padding-top: 1rem;
+}
+
+.p-top-2 {
   padding-top: 3rem;
 }
 
@@ -597,8 +671,20 @@ footer h3 {
   padding-bottom: 3rem;
 }
 
+.p-1 {
+  padding: 1rem;
+}
+
 .m-b-1 {
   margin-bottom: 1.5rem;
+}
+
+.mt-b-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mp-b-1 {
+  margin-bottom: 0.5rem;
 }
 
 .carousel {

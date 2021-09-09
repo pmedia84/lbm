@@ -32,3 +32,23 @@ width: 100%;
         line-height: 1.5;
     }
 }
+
+//CSS Grid for 2 column layouts. Equal size columns and 1 row
+@media (min-width: 768px){
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    // Use these to specify the order in which they appear
+    .firstitem{
+        grid-column: 1/2;
+        grid-row: 1/1;
+    }
+
+    .seconditem{
+        grid-column: 2/3;
+        grid-row: 1/1;
+    }
+
+}

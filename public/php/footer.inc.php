@@ -51,7 +51,9 @@
         </div>
         <div class="social footer-social">
         <?php include("php/socials.inc.php"); ?>
+        
         </div>
+        <?php include("php/pwsbranding.inc.php");?>
     </div>
 
    

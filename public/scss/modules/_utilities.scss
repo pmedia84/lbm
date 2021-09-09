@@ -3,16 +3,36 @@
     padding-top: 0;
 }
 
-// Add top padding of 3rem
+// Add top padding - Standard through site
 .p-top-1{
-    padding-top:3rem;
+    padding-top: $narrowpadding;
+}
+// Add top padding of 3rem - Standard padding through the site
+.p-top-2{
+    padding-top:$stdpadding;
 }
 
 // Add bottom Padding of 3rem
 .p-bt-1{
     padding-bottom: $stdpadding;
 }
+
+// Add padding on all sides
+.p-1{
+    padding: $narrowpadding;
+}
+
 //Add bottom margin 1.5rem
 .m-b-1{
     margin-bottom: 1.5rem; 
+}
+
+//Add margin to titles for spacing
+.mt-b-1{
+    margin-bottom: 0.5rem;
+}
+
+//Add margin to p elements for spacing
+.mp-b-1{
+    margin-bottom: 0.5rem;
 }
