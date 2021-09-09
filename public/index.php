@@ -74,7 +74,7 @@
         </section>
 
         <section>
-        <div class="container banner p-top-1">
+        <div class="container banner p-top-2">
             <h1 class="bannertitle m-b-0">Some of my work...</h1>
         </div>
         

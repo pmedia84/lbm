@@ -7,6 +7,7 @@
 
 img {
   max-width: 100%;
+  vertical-align: middle;
 }
 
 body {
@@ -450,6 +451,25 @@ nav a {
     margin-bottom: 0%;
   }
 }
+.textbox {
+  background-color: rgba(252, 232, 231, 0.7);
+}
+
+.textbox-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #9e6a5b;
+}
+
+.textbox-text {
+  line-height: 1.5;
+}
+
+.textbox-subtitle {
+  font-size: 1.25rem;
+  color: #585858;
+}
+
 .mos--img {
   width: 100%;
   height: 300px;
@@ -488,6 +508,7 @@ footer h3 {
 }
 .contactdetails ul {
   line-height: 1.7;
+  font-family: "Montserrat", sans-serif;
 }
 .contactdetails li {
   letter-spacing: 1.25px;
@@ -507,7 +528,7 @@ footer h3 {
 .openinghrs p {
   margin-bottom: 0.5rem;
 }
-.openinghrs .day {
+.openinghrs .day, .openinghrs .hrs {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -546,6 +567,8 @@ footer h3 {
 
   .footer .openinghrs {
     grid-column: 3/4;
+    width: 100%;
+    margin: 0;
   }
 
   .footer-social:before, .footer-social:after {
@@ -659,6 +682,10 @@ footer h3 {
   padding-top: 0;
 }
 
+.p-top-0 {
+  padding-bottom: 0;
+}
+
 .p-top-1 {
   padding-top: 1rem;
 }
@@ -687,6 +714,17 @@ footer h3 {
   margin-bottom: 0.5rem;
 }
 
+.img-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .full-width {
+    width: 100%;
+  }
+}
 .carousel {
   width: 95%;
   max-width: 800px;

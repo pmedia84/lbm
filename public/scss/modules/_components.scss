@@ -239,3 +239,21 @@ margin-bottom: 0%;
 
 
 }
+
+.textbox{
+  background-color: rgba($secondcol, .7);
+}
+.textbox-title{
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: $primarycol;
+}
+
+.textbox-text{
+  line-height: 1.5;
+}
+
+.textbox-subtitle{
+  font-size: 1.25rem;
+  color: $lightcolor1;
+}

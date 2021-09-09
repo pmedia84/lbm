@@ -3,6 +3,11 @@
     padding-top: 0;
 }
 
+//remove bottom padding
+.p-top-0{
+    padding-bottom: 0;
+}
+
 // Add top padding - Standard through site
 .p-top-1{
     padding-top: $narrowpadding;
@@ -35,4 +40,20 @@
 //Add margin to p elements for spacing
 .mp-b-1{
     margin-bottom: 0.5rem;
+}
+
+//Class to adjust the way images fit within text boxes
+.img-fit{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+$smallbreak: 768px;
+// Converts Container to full width on small screens up to 768px
+@media (max-width:$smallbreak){
+    .full-width{
+        width: 100%;
+    }
 }

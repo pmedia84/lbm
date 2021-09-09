@@ -81,8 +81,8 @@ if(isset($_POST['validation']) && !empty($_POST['validation'])) {
 		$headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
 		//Auto Reply Headers
-		$headers = "From: Parrot Media <karl@parrotmedia.co.uk>" . PHP_EOL;
-		$headers .= "Return-Path: Parrot Media <karl@parrotmedia.co.uk>" . PHP_EOL;
+		$headers = "From: $name <$email>" . PHP_EOL;
+		$headers .= "Return-Path: $name <$email>" . PHP_EOL;
 		$headers .= "Reply-To: $name <$email>" . PHP_EOL;
 		$headers .= "MIME-Version: 1.0" . PHP_EOL;
 		$headers .= "Content-type: text/html; charset=iso-8859-1" . PHP_EOL;
