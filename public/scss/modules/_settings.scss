@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+*::-moz-selection { /* Code for Firefox */
+  color: $secondcol;
+  background: $primarycol;
+}
+
+*::selection {
+  color: $secondcol;
+  background: $primarycol;
+}
+
 img{
     max-width: 100%;
     vertical-align: middle;

@@ -8,57 +8,24 @@ footer{
 
 .footer{
     min-height: 25vh;
+   
 }
 
-.footer .brand{
-    display: none;
-}
-
-.contact-title{
-    text-align: center;
-}
-
-.contactdetails{
-    width: 95%;
-    margin: 0 auto;
-    margin-bottom: 1.5rem;
-    ul{
-        line-height: 1.7;
-        font-family: $sanserif;
-    }
-    li{
-        letter-spacing: 1.25px;
-        font-size: 1rem;
-    }
-    .fa-li{
-        color: $primarycol;
-    }
-}
-
-
-.openinghrs{
-    .opentitle{
-        text-align: center;
-    }
-    width: 95%;
-    margin: 0 auto;
-    
-    p{
-        margin-bottom: 0.5rem;
-    }
-    .day, .hrs{
-        font-family: $sanserif;
-        font-size: 1rem;
-        font-weight: 400;
-    }
-}
-
-.openinghrs table{
-    width: 100%;
+ .footer .brand{
     margin: 0 auto;
 }
 
-@media (min-width:860px){
+
+
+
+
+
+
+
+
+
+
+@media (min-width:850px){
     .footer{
         display: grid;
         grid-template-columns: 1fr 1fr  1fr;
@@ -84,11 +51,7 @@ footer{
     
         
     }
-    .footer .openinghrs{
-        grid-column:3/4 ;
-        width: 100%;
-        margin: 0;
-    }
+   
     .footer-social:before,.footer-social:after{
         content: "";
         background-color: $primarycol;

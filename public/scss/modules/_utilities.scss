@@ -4,13 +4,17 @@
 }
 
 //remove bottom padding
-.p-top-0{
+.p-bt-0{
     padding-bottom: 0;
 }
 
 // Add top padding - Standard through site
 .p-top-1{
     padding-top: $narrowpadding;
+}
+
+.p-tb-2{// Add top and bottom padding of standard padding 
+    padding: $stdpadding 0 $stdpadding 0;
 }
 // Add top padding of 3rem - Standard padding through the site
 .p-top-2{
@@ -22,6 +26,10 @@
     padding-bottom: $stdpadding;
 }
 
+.p-bt-2{
+    //Change bottom padding to narrow padding
+    padding-bottom: $narrowpadding;
+}
 // Add padding on all sides
 .p-1{
     padding: $narrowpadding;
@@ -56,4 +64,12 @@ $smallbreak: 768px;
     .full-width{
         width: 100%;
     }
+}
+
+.pinkbg{//converts the element to a bg color of pink
+    background-color: $secondcol;
+}
+
+.accentbg{
+    background-color: $accentcol;
 }

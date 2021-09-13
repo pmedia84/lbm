@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Lashes and Brows by Mandi : Contact Us</title>
+    <title>Lashes and Brows by Mandi : Contact Me</title>
 
     <?php include("php/nav.inc.php"); ?>
 
@@ -13,11 +13,11 @@
             </div>
         </section>
     </header>
-<section class="container banner">
-    <h1 class="bannertitle m-b-1">Please feel free to get in touch with me</h1>
-    <p class="bannertext m-b-0">I Love To Hear from you...</p>
-</section>
-    <section id="contact" class="contact container p-top-0">
+    <section class="container banner">
+        <h1 class="bannertitle m-b-1">Please feel free to get in touch with me</h1>
+        <p class="bannertext m-b-0">I Love To Hear from you...</p>
+    </section>
+    <section id="contact" class="contact container p-top-0 p-bt-2">
 
 
         <div id="contactdiv">
@@ -27,54 +27,54 @@
             <!-- Prepend all inputs with an icon helper -->
             <form id="contactForm" action="contactscript.php" name="contactForm">
 
-                
-                    <div class="formrow">
-                        <div class="formcolumn">
-                            <div class="inputwrapper">
-                                <!-- flex container -->
-                                <div class="input-prepend">
-                                    <!-- flex item -->
-                                    <span class="input-prepend-text"><i class="fa fa-user-o"></i></span>
-                                </div>
-                                <!-- Flex Item -->
-                                <input class="text-input input" type="text" id="name" placeholder="Your Name *" autocomplete="off" required="" maxlength="45"><small class="form-text text-danger flex-grow-1 help-block lead"></small>
-                            </div>
-                            <div class="inputwrapper">
-                                <!-- flex container -->
-                                <div class="input-prepend">
-                                    <!-- Flex Item -->
-                                    <span class="input-prepend-text"><i class="fa fa-envelope-o"></i></span>
-                                </div>
-                                <input class="email-input input" type="email" id="email" placeholder="Your Email *" autocomplete="off" required="" maxlength="75"><small class="form-text text-danger help-block lead"></small>
-                            </div>
-                            <div class="inputwrapper">
-                                <!-- flex container -->
-                                <div class="input-prepend">
-                                    <!-- Flex Item -->
-                                    <span class="input-prepend-text"><i class="fas fa-mobile-alt"></i></span>
-                                </div>
-                                <input class="text-input input" type="tel" id="phone" placeholder="Your Phone No. *" autocomplete="off" required="" maxlength="45"><small class="form-text text-danger help-block lead"></small>
-                            </div>
-                        </div>
-                        <div class="formcolumn">
-                            <textarea class="input textarea" id="message" placeholder="Your Message *" required="" spellcheck="true" autocomplete="off"></textarea><small class="form-text text-danger help-block lead"></small>
-                        </div>
-                    </div>
 
-                    <div id="button-section">
-                        <div class="formrow formsubmit">
-                            <div class="formcolumn">
-                                <!-- recaptcha -->
-                                <div id="validation" class="g-recaptcha text-center" data-sitekey="6LfvLVMcAAAAANjPyv7P4WUyKJRiSQfu72ZGqZ8s"></div>
-                                <div id="success"></div>
-                                <div id="submit">
-                                    <button class="btn" id="sendMessageButton" type="submit">Send Message</button>
-                                </div>
+                <div class="formrow">
+                    <div class="formcolumn">
+                        <div class="inputwrapper">
+                            <!-- flex container -->
+                            <div class="input-prepend">
+                                <!-- flex item -->
+                                <span class="input-prepend-text"><i class="fa fa-user-o"></i></span>
                             </div>
-                            <!-- success - for status messages -->
+                            <!-- Flex Item -->
+                            <input class="text-input input" type="text" id="name" placeholder="Your Name *" autocomplete="off" required="" maxlength="45"><small class="form-text text-danger flex-grow-1 help-block lead"></small>
+                        </div>
+                        <div class="inputwrapper">
+                            <!-- flex container -->
+                            <div class="input-prepend">
+                                <!-- Flex Item -->
+                                <span class="input-prepend-text"><i class="fa fa-envelope-o"></i></span>
+                            </div>
+                            <input class="email-input input" type="email" id="email" placeholder="Your Email *" autocomplete="off" required="" maxlength="75"><small class="form-text text-danger help-block lead"></small>
+                        </div>
+                        <div class="inputwrapper">
+                            <!-- flex container -->
+                            <div class="input-prepend">
+                                <!-- Flex Item -->
+                                <span class="input-prepend-text"><i class="fas fa-mobile-alt"></i></span>
+                            </div>
+                            <input class="text-input input" type="tel" id="phone" placeholder="Your Phone No. *" autocomplete="off" required="" maxlength="45"><small class="form-text text-danger help-block lead"></small>
                         </div>
                     </div>
-                
+                    <div class="formcolumn">
+                        <textarea class="input textarea" id="message" placeholder="Your Message *" required="" spellcheck="true" autocomplete="off"></textarea><small class="form-text text-danger help-block lead"></small>
+                    </div>
+                </div>
+
+                <div id="button-section">
+                    <div class="formrow formsubmit">
+                        <div class="formcolumn">
+                            <!-- recaptcha -->
+                            <div id="validation" class="g-recaptcha text-center" data-sitekey="6LfvLVMcAAAAANjPyv7P4WUyKJRiSQfu72ZGqZ8s"></div>
+                            <div id="success"></div>
+                            <div id="submit">
+                                <button class="btn" id="sendMessageButton" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                        <!-- success - for status messages -->
+                    </div>
+                </div>
+
             </form>
 
 
@@ -89,8 +89,55 @@
 
     </section>
 
+    <section class="container banner p-top-0">
+        <h1 class="bannertitle m-b-1">My Contact Details</h1>
+        <p class="bannertext m-b-0">Or you can call into my Salon...</p>
+    </section>
+    <section class="containerfw accentbg p-tb-2">
+        <div class="gridcontainer">
+            <div class="openinghrs m-b-1">
+
+                <h3 class="opentitle">Salon Opening Hours</h3>
+
+
+                <table>
+                    <tr>
+                        <td class="day">Monday - Wednesday</td>
+                        <td class="hrs">09:00 - 17:00</td>
+                    </tr>
+                    <tr>
+                        <td class="day">Thursday</td>
+                        <td class="hrs">09:00 - 20:00</td>
+                    </tr>
+                    <tr>
+                        <td class="day">Friday</td>
+                        <td class="hrs">09:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td class="day">Saturday</td>
+                        <td class="hrs">09:00 - 15:00</td>
+                    </tr>
+
+                    <tr>
+                        <td class="day">Sunday</td>
+                        <td class="hrs">Closed</td>
+                    </tr>
+
+                </table>
+
+            </div>
+            <div class="contactdetails">
+                <h3 class="contact-title">You Can Find Me Here</h3>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-map-marker"></i></span>Beaut Hair Design, 16 Little London, Long Sutton, PE12 9LE</li>
+                    <li><span class="fa-li"><i class="fas fa-mobile-alt"></i></i></span>07827 962740</li>
+                    <li><span class="fa-li"><i class="far fa-paper-plane"></i></i></i></span>mandi@lashesandbrowsbymandi.co.uk</li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <div class="containerfw">
-        <?php include("php/map.inc.php");?>
+        <?php include("php/map.inc.php"); ?>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

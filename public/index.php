@@ -54,7 +54,7 @@
             <div class="banner container p-top-0">
                 <h1 class="bannertitle m-b-0">About Me</h1>
             </div>
-            <div class="containerfw pinkbg">
+            <div class="containerfw accentbg">
                 <div class="container">
                     <div class="staff-container">
                         <img class="staff-img" src="img/staff1.jpg" alt="image of Mandi Saville">

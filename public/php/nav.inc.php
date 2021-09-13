@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="theme-color" content="#fce8e7"/>
+<meta name="theme-color" content="#f9d4d2">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -22,7 +22,7 @@
 
         <div class="nav-container">
             <div class="brand">
-                <a href="index.php">
+                <a href="index">
                     <h1 class="brand-title">Lashes & Brows</h1>
                     <p class="brand-subtitle">BY MANDI</p>
                 </a>
