@@ -34,6 +34,7 @@
                 <li class="nav-link"><a href="about">About</a></li>
                 <li class="nav-link"><a href="prices">Prices</a></li>
                 <li class="nav-link"><a href="contact">Contact</a></li>
+                
             </ul>
 
             <div class="burger">

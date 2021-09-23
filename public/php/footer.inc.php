@@ -32,6 +32,7 @@
 
 <script src="js/nav.js"></script>
 <script src="js/flickity.pkgd.min.js"> </script>
+<script src="js/more.js"></script>
 </body>
 
 </html>

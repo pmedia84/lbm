@@ -25,6 +25,8 @@
 
     
         <img class="mos--img" src="img/mos-img6.jpg">
+
+        <img class="mos--img" src="img/mos-img7.jpg">
    
 </div>
 

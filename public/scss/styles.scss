@@ -41,14 +41,66 @@
     font-size: 1.1rem;
     font-family: $sanserif;
     font-weight: 200;
+    position: relative;
+   
   }
-
+.more{
+  font-family: "Font Awesome 5 Free";
+  text-align: center;
+  opacity: 1;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: $primarycol;
+    cursor: pointer;
+    width: 100%;
+    margin: 0 auto;
+    transform: rotate(0deg);
+    transition: transform 500ms cubic-bezier(.77,0,.18,1);
+    
+      -webkit-tap-highlight-color: transparent;
+    
+}
+  .more-clicked {
+    opacity: 0.7;
+    transform: rotate(180deg);
+    transition: transform 500ms cubic-bezier(.77,0,.18,1);
+  }
   .staff-name{
     font-size: 2rem;
     font-family: $handwriting;
     font-weight: 300;
   }
  
+  .staff-text-hidden{
+    display: none;
+    
+    animation: opacity 1s ease-in-out;
+    
+  }
+
+  @keyframes opacity{
+    0% {
+      opacity: 0;
+    }
+
+    50%{
+      opacity: 0.5;
+      
+    }
+
+    75%{
+      opacity: 0.7;
+    }
+
+    100%{
+      opacity: 1;
+    }
+  }
+  .showmore{
+    display: block;
+    
+
+  }
   @media (min-width:768px){
       .staff-container{
           display: grid;

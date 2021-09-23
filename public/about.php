@@ -24,8 +24,10 @@
             <img class="seconditem img-fit" src="img/hybridlashes.jpg" alt="">
             <div class="p-1 firstitem textbox">
                 <h2 class="mt-b-1 textbox-title">Lashes</h2>
-                <p class="content mp-b-1 textbox-subtitle">Transform your lashes with some amazing treatments</p>
-                <p class="content mp-b-1 textbox-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quidem veniam dolor, voluptates minima iusto provident! Modi ducimus soluta magnam.</p>
+                <p class="content mp-b-1 textbox-subtitle">Eyes Are The Window To Your Soul</p>
+                <p class="content mp-b-1 textbox-text">From Classic to Extreme Mega Volume, I bond one lash(Classic) or more lighter weight lashes, handmade into a fan (Russian) to your natrual lash, giving a fuller, darker efffect.
+The look can vary from subtle, being Classic to extremely dramatic with Extreme Mega Volume.
+</p>
                 <ul class="fa-ul content">
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Russian Volume Lashes</li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Hybrid Lashes</li>
@@ -38,8 +40,8 @@
             <img class="img-fit" src="img/hennabrow.jpg" alt="">
             <div class="p-1 textbox">
                 <h2 class="mt-b-1 textbox-title">Brows</h2>
-                <p class="content mp-b-1 textbox-subtitle">Give your brows the amazing look they deserve</p>
-                <p class="content mp-b-1 textbox-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quidem veniam dolor, voluptates minima iusto provident! Modi ducimus soluta magnam.</p>
+                <p class="content mp-b-1 textbox-subtitle">If Eyes Are The Window To Your Soul, Then Brows Are The Frame To That Window</p>
+                <p class="content mp-b-1 textbox-text">From a simple wax & shape, to the ever popular Brow Lamination & Hennna Brow, all brow treatments are catered for.</p>
                 <ul class="fa-ul content textbox-text">
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Henna Brows</li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Wax Tint & Tidy</li>
@@ -52,7 +54,9 @@
             <div class="p-1 firstitem textbox">
                 <h2 class="mt-b-1 textbox-title">Derma Planing</h2>
                 <p class="content mp-b-1 textbox-subtitle">Anti-aging Skincare treatments without the chemicals</p>
-                <p class="content mp-b-1 textbox-text">Dermaplaning is a procedure that exfoliates your skin and gets rid of dirt and vellus hair, better known as “peach fuzz.” </p>
+                <p class="content mp-b-1 textbox-text">Is a method of exfoliation that uses a scalpel blade to remove the top layer of dulling, dead skin cells, to leave a brighter, smoother, rejuvinated complexion. It removes the velus "Peach Fuzz" hair, making way for a great base for make up.
+Finished alongside with a relaxing prescription facial using Eve Taylor Products, this is a lovely relaxing treatment.
+</p>
                 <ul class="fa-ul content textbox-text">
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Increase absorption of topical products</li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Immediatley diminishes the appearance of fine lines and wrinkles</li>
