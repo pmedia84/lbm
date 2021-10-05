@@ -27,7 +27,7 @@
 
             <div class="cardcontainer">
                 <div class="card">
-                    <img src="img/mos-img3.jpg" alt="" class="card-img">
+                    <img src="img/lashes.jpg" alt="" class="card-img">
                     <div class="cardtext">
                         <h3 class="card-title">Lashes</h3>
                         <p class="card-text">The Window To Your Soul</p>
@@ -44,7 +44,7 @@
                     <img src="img/skincare.jpg" alt="" class="card-img">
                     <div class="cardtext">
                         <h3 class="card-title">Dermaplaning</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet..</p>
+                        <p class="card-text">No More Peach Fuzz.</p>
                     </div>
                 </div>
             </div>

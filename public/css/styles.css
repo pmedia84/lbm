@@ -64,6 +64,10 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto;
 }
 
+.staff-img {
+  margin: 0 auto;
+}
+
 .staff-container h1, .staff-container p {
   margin: 0.5rem 0 0.5rem 0;
 }
