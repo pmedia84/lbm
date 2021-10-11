@@ -4,7 +4,7 @@
 <head>
     <title>Lashes and Brows by Mandi : Price List</title>
     <?php include("php/nav.inc.php"); ?>
-
+    
     <header>
         <section class="pricehero hero containerfw ">
             <div class="container herogrid">
@@ -23,11 +23,12 @@
         </div>
 
         <section class="pricelist">
-        <?php
+        <script id="timelyScript" src="//book.gettimely.com/widget/book-button-v1.5.js"></script>
+        <?php 
     $db = new mysqli("localhost", "lashesandbrows", "LBM_2021", "lashesan_pricelist",);
 
 
-    $query = "SELECT id, name, description, subtitle, price FROM product ORDER BY id";
+    $query = "SELECT id, name, description, subtitle, price, button FROM product ORDER BY id";
     $result = $db->query($query);
     while ($row = $result->fetch_assoc()) {
         $id = $row['id'];
@@ -35,6 +36,7 @@
         $description = $row['description'];
         $price = $row['price'];
         $subtitle = $row['subtitle'];
+        $button = $row['button'];
         echo "
         
         
@@ -46,6 +48,7 @@
                     <h1 class='pricecard-price'>£$price</h1>
                     <p class='pricecard-price-subtitle'>$subtitle</p>
                     <p class='pricecard-text'>$description</p>
+                    <p class='pricecard-text'>$button</p>
                 </div>
             </div>
         
@@ -59,7 +62,7 @@
 
     ?>
         
-
+     
            
 
         </section>
