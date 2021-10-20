@@ -251,6 +251,15 @@ margin-bottom: 0%;
 
 }
 
+#response{
+  display: none;
+}
+.response-fieldset{
+  border: 1px solid $primarycol;
+  border-radius: 0.25rem;
+}
+
+
 .textbox{
   background-color: rgba($secondcol, .7);
 }

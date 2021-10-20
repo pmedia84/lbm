@@ -471,6 +471,15 @@ nav a {
     margin-bottom: 0%;
   }
 }
+#response {
+  display: none;
+}
+
+.response-fieldset {
+  border: 1px solid #9e6a5b;
+  border-radius: 0.25rem;
+}
+
 .textbox {
   background-color: rgba(252, 232, 231, 0.7);
 }

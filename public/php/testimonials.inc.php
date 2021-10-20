@@ -5,9 +5,7 @@
         <div class="carousel-item">
         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Famy.male%2Fposts%2F10156477668749150&show_text=true&width=500" width="90%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="web-share"></iframe>
         </div>
-        <div class="carousel-item">
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fhayley.lesterallenby%2Fposts%2F3098015340293834&show_text=true&width=500" width="90%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="web-share"></iframe>
-        </div>
+        
         <div class="carousel-item">
         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkezza881%2Fposts%2F10157881451651471&show_text=true&width=500" width="90%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="web-share"></iframe>
         </div>
