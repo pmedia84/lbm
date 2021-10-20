@@ -601,14 +601,14 @@ footer h3 {
 }
 
 .hero {
-  background-image: url("../img/eyes.jpg");
+  background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 2.5vh;
-  background-color: #F3C6C4;
-  background-blend-mode: multiply;
-  color: #ffecd1;
+  background-color: #61514f;
+  background-blend-mode: soft-light;
+  color: #f0f0f0;
 }
 
 .herogrid {
@@ -636,13 +636,16 @@ footer h3 {
 
 .pricehero {
   background-image: url("../img/price-hero.jpg");
-  background-color: #fce8e7;
+  background-color: #fcc5c5;
+  background-blend-mode: multiply;
   max-height: 50vh;
 }
 
 .contacthero {
-  background-image: url("../img/contact-hero.jpg");
+  background-image: url("../img/contact-hero2.png");
   max-height: 50vh;
+  background-color: white;
+  background-blend-mode: multiply;
 }
 
 .contact-title {
@@ -690,6 +693,8 @@ footer h3 {
 .abouthero {
   background-image: url("../img/about-hero.jpg");
   max-height: 50vh;
+  background-color: #fcc5c5;
+  background-blend-mode: multiply;
 }
 
 .p-top-0 {

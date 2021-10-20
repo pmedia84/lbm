@@ -1,12 +1,12 @@
 // Default Hero Settings
 .hero{
-   background-image: url("../img/eyes.jpg");
+   background-image: url("../img/hero.jpg");
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat;
     padding: 2.5vh;
     background-color: $herobgblend;
-  background-blend-mode: multiply;
+  background-blend-mode: soft-light;
   color: $text-light;
 }
 
@@ -37,16 +37,20 @@
 
 .pricehero{
     background-image: url("../img/price-hero.jpg");
-    background-color: $secondcol;
+    background-color: rgb(252, 197, 197);
+    background-blend-mode: multiply;
+    
     max-height: 50vh;
 }
 
 // Contact Page
 
 .contacthero{
-    background-image: url("../img/contact-hero.jpg");
+    background-image: url("../img/contact-hero2.png");
     //background-color: $secondcol;
     max-height: 50vh;
+    background-color: rgb(255, 255, 255);
+   background-blend-mode: multiply;
 }
 
 .contact-title{
@@ -102,6 +106,8 @@
     background-image: url("../img/about-hero.jpg");
     //background-color: $secondcol;
     max-height: 50vh;
+    background-color: rgb(252, 197, 197);
+    background-blend-mode: multiply;
 }
 
 

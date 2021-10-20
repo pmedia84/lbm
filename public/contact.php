@@ -9,7 +9,7 @@
     <header>
         <section class="contacthero hero containerfw ">
             <div class="container herogrid">
-                <h1 class="herotitle">Contact Me</h1>
+                <h1 class="herotitle"></h1>
             </div>
         </section>
     </header>
