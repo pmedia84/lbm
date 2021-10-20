@@ -49,11 +49,11 @@ if(isset($_POST['validation']) && !empty($_POST['validation'])) {
 		// Configuration options
 		// Enter the email address that you want emails to be sent to.
 		$address = "mandi@lashesandbrowsbymandi.co.uk";
-		$visitoremail = $email; //address for auto reply
+		
 
 		//email subject
 		$e_subject = 'You have been contacted by ' . $name . '.';
-		$arsubject = 'Thank You For Contacting Apex Personal Fitness';
+		
 
 		// compose email body
 		$msg = "<h4>Dear Mandi,</h4>
@@ -73,20 +73,14 @@ if(isset($_POST['validation']) && !empty($_POST['validation'])) {
 		<p>Regards,<br><br><strong>Apex Personal Training</strong></p>";
 
 		//email headers
-		$headers = "From: Parrot Media <karl@parrotmedia.co.uk>" . PHP_EOL;
-		$headers .= "Return-Path: Parrot Media <karl@parrotmedia.co.uk>" . PHP_EOL;
+		$headers = "From: Lashes and Brows by Mandi <admin@lashesandbrowsbymandi.co.uk>" . PHP_EOL;
+		$headers .= "Return-Path: Lashes and Brows by Mandi <admin@lashesandbrowsbymandi.co.uk>" . PHP_EOL;
 		$headers .= "Reply-To: $name <$email>" . PHP_EOL;
 		$headers .= "MIME-Version: 1.0" . PHP_EOL;
 		$headers .= "Content-type: text/html; charset=iso-8859-1" . PHP_EOL;
 		$headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
-		//Auto Reply Headers
-		$headers = "From: $name <$email>" . PHP_EOL;
-		$headers .= "Return-Path: $name <$email>" . PHP_EOL;
-		$headers .= "Reply-To: $name <$email>" . PHP_EOL;
-		$headers .= "MIME-Version: 1.0" . PHP_EOL;
-		$headers .= "Content-type: text/html; charset=iso-8859-1" . PHP_EOL;
-		$headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
+		
 
 		//send email
 		if(mail($address, $e_subject, $msg, $headers)) {
