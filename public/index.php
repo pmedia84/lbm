@@ -22,7 +22,7 @@
             <div class="banner">
                 <h1 class="bannertitle m-b-1">Professional Eyelash Extensions</h1>
                 <h3 class="bannersubtitle m-b-1">I Love making you look and feel amazing...</h3>
-                <p class="bannertext m-b-1">Transform your Eyelashes to be fuller, longer and curlier for a sensational look...</p>
+                <p class="bannertext m-b-1">Transform your eyelashes to be fuller, longer and curlier for a sensational look.</p>
             </div>
 
             <div class="cardcontainer">
@@ -37,7 +37,7 @@
                     <img src="img/mos-img4.jpg" alt="" class="card-img">
                     <div class="cardtext">
                         <h3 class="card-title">Brows</h3>
-                        <p class="card-text">The Frame to That Window</p>
+                        <p class="card-text">The Frame To That Window</p>
                     </div>
                 </div>
                 <div class="card">
