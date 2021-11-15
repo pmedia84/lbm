@@ -6,10 +6,7 @@
     <div class="container footer">
 
         
-        <div class="brand">
-            <h1 class="brand-title">Lashes & Brows</h1>
-            <p class="brand-subtitle">BY MANDI</p>
-        </div>
+        
 
        
         <div class="social footer-social">

@@ -23,8 +23,7 @@
         <div class="nav-container">
             <div class="brand">
                 <a href="index">
-                    <h1 class="brand-title">Lashes & Brows</h1>
-                    <p class="brand-subtitle">BY MANDI</p>
+                    <img src="img/lbm-logo-v2.svg" alt="">
                 </a>
             </div>
 
@@ -36,7 +35,7 @@
                 <li class="nav-link"><a href="contact">Contact</a></li>
                 
             </ul>
-
+            
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
