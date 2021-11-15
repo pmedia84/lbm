@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Lashes and Brows by Mandi</title>
+    <title>Lashes, Brows and Aesthetics - Beauty</title>
+    <meta name="description" content="Transform your eyelashes to be fuller, longer and curlier for a sensational look.">
     <?php include("php/nav.inc.php"); ?>
 
 

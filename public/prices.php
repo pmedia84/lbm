@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Lashes and Brows by Mandi : Price List</title>
+    <title>Lashes, Brows and Aesthetics: Price List</title>
+    <meta name="description" content="My Price List">
     <?php include("php/nav.inc.php"); ?>
     
     <header>

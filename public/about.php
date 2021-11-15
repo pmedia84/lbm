@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Lashes and Brows by Mandi : About Me</title>
-
+    <title>Lashes, Brows and Aesthetics: About Me</title>
+    <meta name="description" content="About me, I love to transform your look with my amazing Treatments.">
     <?php include("php/nav.inc.php"); ?>
 
     <header>

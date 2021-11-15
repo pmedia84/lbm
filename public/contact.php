@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Lashes and Brows by Mandi : Contact Me</title>
-
+    <title>Lashes, Brows and Aesthetics: Contact Me</title>
+    <meta name="description" content="Contact Me">
     <?php include("php/nav.inc.php"); ?>
 
     <header>
