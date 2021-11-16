@@ -48,7 +48,7 @@ if(isset($_POST['validation']) && !empty($_POST['validation'])) {
 
 		// Configuration options
 		// Enter the email address that you want emails to be sent to.
-		$address = "mandi@lashesandbrowsbymandi.co.uk";
+		$address = "mandi@lashesbrowsandaesthetics.co.uk";
 		
 
 		//email subject
@@ -73,8 +73,8 @@ if(isset($_POST['validation']) && !empty($_POST['validation'])) {
 		<p>Regards,<br><br><strong>Apex Personal Training</strong></p>";
 
 		//email headers
-		$headers = "From: Lashes and Brows by Mandi <admin@lashesandbrowsbymandi.co.uk>" . PHP_EOL;
-		$headers .= "Return-Path: Lashes and Brows by Mandi <admin@lashesandbrowsbymandi.co.uk>" . PHP_EOL;
+		$headers = "From: Lashes and Brows by Mandi <admin@lashesbrowsandaesthetics.co.uk>" . PHP_EOL;
+		$headers .= "Return-Path: Lashes and Brows by Mandi <admin@lashesbrowsandaesthetics.co.uk>" . PHP_EOL;
 		$headers .= "Reply-To: $name <$email>" . PHP_EOL;
 		$headers .= "MIME-Version: 1.0" . PHP_EOL;
 		$headers .= "Content-type: text/html; charset=iso-8859-1" . PHP_EOL;
