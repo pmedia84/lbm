@@ -26,7 +26,7 @@
         <section class="pricelist">
         <script id="timelyScript" src="//book.gettimely.com/widget/book-button-v1.5.js"></script>
         <?php 
-    $db = new mysqli("localhost", "lashesandbrows", "LBM_2021", "lashesan_pricelist",);
+    $db = new mysqli("localhost", "lashesbr_admin", "LBA_2021!", "lashesbr_price_list",);
 
 
     $query = "SELECT id, name, description, subtitle, price, button FROM product ORDER BY id";
