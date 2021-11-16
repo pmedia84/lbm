@@ -65,7 +65,7 @@
                     <div class="formrow formsubmit">
                         <div class="formcolumn">
                             <!-- recaptcha -->
-                            <div id="validation" class="g-recaptcha text-center" data-sitekey="6LfvLVMcAAAAANjPyv7P4WUyKJRiSQfu72ZGqZ8s"></div>
+                            <div id="validation" class="g-recaptcha text-center" data-sitekey="6Lc7GTodAAAAAHOQZTJzsQ8hQBEm8cGw1BqnsJdp"></div>
                             <div id="success"></div>
                             <div id="submit">
                                 <button class="btn" id="sendMessageButton" type="submit">Send Message</button>
