@@ -1,4 +1,3 @@
-<?php include("nav-admin.inc.php"); ?>
 <?php
 // We need to use sessions, so you should always start sessions using the below code.
 session_start();
@@ -8,6 +7,7 @@ if (!isset($_SESSION['loggedin'])) {
 	exit;
 }
 ?>
+<?php include("nav-admin.inc.php"); ?>
     <title>Lashes Brows and Aesthetics - Admin</title>
 
     
