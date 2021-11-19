@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<script id="timelyScript" src="//book.gettimely.com/widget/book-button-v1.5.js"></script>
 <head>
     <title>Lashes, Brows and Aesthetics: Price List</title>
     <meta name="description" content="My Price List">
