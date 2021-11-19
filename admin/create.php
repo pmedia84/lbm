@@ -1,4 +1,4 @@
-<?php include("nav-admin.inc.php"); ?>
+
 
 <?php
 include 'functions.php';
@@ -24,7 +24,7 @@ if (!empty($_POST)) {
     header('Location: price-list.php');
 }
 ?>
-
+<?php include("nav-admin.inc.php"); ?>
 <div class="container update">
     
     <form action="create.php" method="post">
