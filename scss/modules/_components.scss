@@ -159,7 +159,8 @@
     margin-bottom: 1rem;
   }
   
-  .input-prepend{ /*Input Icon Helper*/
+  .input-prepend,
+  .textareapre{ /*Input Icon Helper*/
     width: 40px;
     height: 38px;
     padding:1rem 1rem;
@@ -189,6 +190,17 @@
     border-radius: 0.25rem;
   }
   
+  .textareapre{
+    
+    height: 150px;
+    padding:.375rem .75rem;
+    resize: none;
+    border-radius: 0.25rem 0 0 0.25rem;
+  }
+
+  .textareapre + textarea{
+    border-radius: 0 0.25rem 0.25rem 0;
+  }
   .input:focus{ /*Input Focus Settings*/
     outline: none;
     box-shadow: 0 0 2pt 1pt $focuscolor;

@@ -49,7 +49,7 @@
                     <h1 class='pricecard-price'>£$price</h1>
                     <p class='pricecard-price-subtitle'>$subtitle</p>
                     <p class='pricecard-text'>$description</p>
-                    <p class='pricecard-text'>$button</p>
+                    <p class='pricecard-text'><script>$button</script></p>
                 </div>
             </div>
         

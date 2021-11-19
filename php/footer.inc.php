@@ -14,6 +14,7 @@
         
         </div>
         <?php include("php/pwsbranding.inc.php");?>
+        <a href="admin/login" target="_blank"><i class="fas fa-users-cog"></i></a>
     </div>
 
    
