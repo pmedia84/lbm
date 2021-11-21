@@ -1,6 +1,3 @@
-<?php include("nav-admin.inc.php"); ?>
-
-
 <?php
 session_start();
 // If the user is not logged in redirect to the login page...
@@ -29,6 +26,8 @@ $product = $stmt->fetchAll(PDO::FETCH_ASSOC);
 // Get the total number of products, this is so we can determine whether there should be a next and previous button
 $num_products = $pdo->query('SELECT COUNT(*) FROM product')->fetchColumn();
 ?>
+<?php include("nav-admin.inc.php"); ?>
+
 
 
 <div class="container read">
