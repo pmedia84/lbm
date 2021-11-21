@@ -11,7 +11,7 @@ $pdo = pdo_connect_mysql();
 // Get the page via GET request (URL param: page), if non exists default the page to 1
 $page = isset($_GET['page']) && is_numeric($_GET['page']) ? (int)$_GET['page'] : 1;
 // Number of records to show on each page
-$records_per_page = 10;
+$records_per_page = 5;
 
 // Prepare the SQL statement and get records from our products table, LIMIT will determine the page
 $stmt = $pdo->prepare('SELECT * FROM product ORDER BY id LIMIT :current_page, :record_per_page');
@@ -28,7 +28,7 @@ $num_products = $pdo->query('SELECT COUNT(*) FROM product')->fetchColumn();
 ?>
 <?php include("nav-admin.inc.php"); ?>
 
-
+<script id="timelyScript" src="//book.gettimely.com/widget/book-button-v1.5.js"></script>
 
 <div class="container read">
 	<h1>View Your Price List</h1><br>

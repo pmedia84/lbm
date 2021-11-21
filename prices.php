@@ -5,7 +5,7 @@
     <title>Lashes, Brows and Aesthetics: Price List</title>
     <meta name="description" content="My Price List">
     <?php include("php/nav.inc.php"); ?>
-    
+    <script id="timelyScript" src="//book.gettimely.com/widget/book-button-v1.5.js"></script>
     <header>
         <section class="pricehero hero containerfw ">
             <div class="container herogrid">
@@ -24,7 +24,7 @@
         </div>
 
         <section class="pricelist">
-        <script id="timelyScript" src="//book.gettimely.com/widget/book-button-v1.5.js"></script>
+        
         <?php 
     $db = new mysqli("localhost", "lashesbr_admin", "LBA_2021!", "lashesbr_price_list",);
 
