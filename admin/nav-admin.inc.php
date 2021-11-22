@@ -35,6 +35,7 @@
 
 
             <ul class="nav-links">
+                <li class="nav-link"><a href="index">Home</a></li>
                 <li class="nav-link"><a href="price-list">Price List</a></li>
                 <li class="nav-link"><a href="profile">Profile</a></li>
                 <li class="nav-link"><a href="logout">Log Out</a></li>
