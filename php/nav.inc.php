@@ -37,6 +37,7 @@
             <ul class="nav-links">
                 <li class="nav-link"><a href="index">Home</a></li>
                 <li class="nav-link"><a href="about">About</a></li>
+                <li class="nav-link"><a href="aesthetics">Aesthetics</a></li>
                 <li class="nav-link"><a href="prices">Prices</a></li>
                 <li class="nav-link"><a href="contact">Contact</a></li>
                 

@@ -153,7 +153,7 @@ nav a {
 .nav-links {
   list-style-type: none;
   display: flex;
-  width: 40%;
+  width: 50%;
   justify-content: space-between;
 }
 .nav-links a {
@@ -193,7 +193,7 @@ nav a {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .burger {
     display: block;
     cursor: pointer;
@@ -337,7 +337,8 @@ nav a {
 
 .pricecard-title {
   background-color: rgba(252, 232, 231, 0.4);
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
   font-family: "Montserrat", sans-serif;
   line-height: 0.9;
   text-transform: uppercase;
@@ -720,6 +721,10 @@ footer i {
   background-blend-mode: multiply;
 }
 
+.aestheticshero {
+  background-image: url("../img/aesthetics-hero.jpg");
+}
+
 .p-top-0 {
   padding-top: 0;
 }
@@ -907,15 +912,14 @@ input[type=submit]:hover {
 }
 
 table {
-  width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 table,
 th,
 td {
   border: 1.25px solid #9e6a5b;
-  border-radius: 1rem;
 }
 
 th {
@@ -928,7 +932,20 @@ td {
 }
 
 .th-description {
-  min-width: 200px;
+  width: 25%;
+}
+
+.subtitle,
+.category {
+  width: clamp(10ch, 1vw, 5ch);
+}
+
+.id {
+  width: 2.5rem;
+}
+
+.th-edit {
+  width: min-max(50px, 50px);
 }
 
 .read .create-contact {
@@ -949,6 +966,7 @@ td {
 .read .pagination {
   display: flex;
   justify-content: flex-end;
+  width: 95%;
 }
 
 .read .pagination a {
@@ -966,7 +984,8 @@ td {
 }
 
 .read table {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   padding-top: 30px;
   border-collapse: collapse;
 }
@@ -985,10 +1004,11 @@ td {
 
 .read table tbody tr {
   border-bottom: 1px solid #d3dae0;
+  word-wrap: break-word;
 }
 
 .read table tbody tr:nth-child(even) {
-  background-color: #fbfcfc;
+  background-color: #e4e4e4;
 }
 
 .read table tbody tr:hover {
@@ -1019,8 +1039,11 @@ td {
 
 .read table tbody tr td.actions .edit, .read table tbody tr td.actions .trash {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-align: right;
   text-decoration: none;
+  margin: 0.25rem;
   color: #fce8e7;
   padding: 10px 12px;
 }
@@ -1090,6 +1113,72 @@ td {
   display: none;
 }
 
+@media (max-width: 768px) {
+  .table {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .hidden-info {
+    display: none;
+  }
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #9e6a5b;
+  background-color: rgba(252, 232, 231, 0.4);
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: #805d54;
+  font-size: 1.25rem;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #9e6a5b;
+  color: #fce8e7;
+  opacity: 0.8;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #9e6a5b;
+  color: #fce8e7;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s;
+  /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .social {
   display: inline-flex;
   flex-direction: row;

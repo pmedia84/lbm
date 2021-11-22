@@ -28,49 +28,66 @@ $num_products = $pdo->query('SELECT COUNT(*) FROM product')->fetchColumn();
 ?>
 <?php include("nav-admin.inc.php"); ?>
 
-<script id="timelyScript" src="//book.gettimely.com/widget/book-button-v1.5.js"></script>
+<section class="container hidden-info">
+    <h1>Please use a device with a larger screen size to manage your price list</h1>
+</section>
 
-<div class="container read">
-	<h1>View Your Price List</h1><br>
-	<a class="btn" href="create.php" class="create-contact" style="margin-bottom: 1rem;">Create Product</a><br><br>
-	<table>
-        <thead>
-        <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th class="th-description">Description</th>
-                    <th>Subtitle</th>
-                    <th>Price</th>
-                    <th>Extra</th>
-                    <th>Edit</th>
-                </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($product as $product): ?>
+<section class="table">
+    <div class="read">
+        <div class="container p-bt-0">
+            <h1>View Your Price List</h1><br>
+            <a class="btn" href="create.php" class="create-contact" style="margin-bottom: 1rem;">Create Product</a><br><br>
+        </div>
+        
+        <table>
+        <div class="pagination">
+            <?php if ($page > 1): ?>
+            <a href="price-list.php?page=<?=$page-1?>"><i class="far fa-hand-point-left"></i></a>
+            <?php endif; ?>
+            <?php if ($page*$records_per_page < $num_products): ?>
+            <a href="price-list.php?page=<?=$page+1?>"><i class="far fa-hand-point-right"></i></a>
+            <?php endif; ?>
+        </div>
+            <thead>
             <tr>
-                <td><?=$product['id']?></td>
-                <td><?=$product['name']?></td>
-                <td><?=$product['description']?></td>
-                <td><?=$product['subtitle']?></td>
-                <td>£<?=$product['price']?></td>
-                <td><script><?=$product['button']?></script></td>
-                <td class="actions">
-                    <a href="update.php?id=<?=$product['id']?>" class="edit"><i class="fas fa-pen fa-xs"></i></a>
-                    <a href="delete.php?id=<?=$product['id']?>" class="trash"><i class="fas fa-trash fa-xs"></i></a>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
-	<div class="pagination">
-		<?php if ($page > 1): ?>
-		<a href="price-list.php?page=<?=$page-1?>"><i class="far fa-hand-point-left"></i></a>
-		<?php endif; ?>
-		<?php if ($page*$records_per_page < $num_products): ?>
-		<a href="price-list.php?page=<?=$page+1?>"><i class="far fa-hand-point-right"></i></a>
-		<?php endif; ?>
-	</div>
-</div>
+                        <th class="id">#</th>
+                        <th class="name">Name</th>
+                        <th class="category">Category</th>
+                        <th class="th-description">Description</th>
+                        <th class="subtitle">Subtitle</th>
+                        <th class="price">Price</th>
+                        <th class="th-extra">Extra</th>
+                        <th class="th-edit">Edit</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($product as $product): ?>
+                <tr>
+                    <td><?=$product['id']?></td>
+                    <td><?=$product['name']?></td>
+                    <td><?=$product['category']?></td>
+                    <td><?=$product['description']?></td>
+                    <td><?=$product['subtitle']?></td>
+                    <td>£<?=$product['price']?></td>
+                    <td><?=$product['button'] = htmlentities($product['button'],ENT_QUOTES)?></td>
+                    <td class="actions">
+                        <a href="update.php?id=<?=$product['id']?>" class="edit"><i class="fas fa-pen fa-xs"></i></a>
+                        <a href="delete.php?id=<?=$product['id']?>" class="trash"><i class="fas fa-trash fa-xs"></i></a>
+                    </td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+        <div class="pagination">
+            <?php if ($page > 1): ?>
+            <a href="price-list.php?page=<?=$page-1?>"><i class="far fa-hand-point-left"></i></a>
+            <?php endif; ?>
+            <?php if ($page*$records_per_page < $num_products): ?>
+            <a href="price-list.php?page=<?=$page+1?>"><i class="far fa-hand-point-right"></i></a>
+            <?php endif; ?>
+        </div>
+    </div>
+</section>
 
 
 

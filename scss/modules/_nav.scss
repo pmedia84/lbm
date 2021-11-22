@@ -38,7 +38,7 @@ a{
 .nav-links{
     list-style-type: none;
     display: flex;
-    width: 40%;
+    width: 50%;
    justify-content: space-between;
 
    a{
@@ -81,7 +81,7 @@ a{
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     
     .burger{
         display: block;

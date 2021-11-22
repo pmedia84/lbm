@@ -50,15 +50,16 @@ input[type="submit"]:hover {
 }
 
 table{
-    width: 100%;
+   // width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 table,
 th,
 td{
     border: 1.25px solid $primarycol;
-    border-radius: 1rem;
+    
 }
 
 th{
@@ -70,11 +71,21 @@ td{
 }
 
 .th-description{
-    min-width: 200px;
+    width: 25%;
+}
+.subtitle,
+.category{
+    width: clamp(10ch,1vw,5ch );
+
 }
 
+.id{
+    width: 2.5rem;
+}
 
-
+.th-edit{
+    width: min-max(50px,50px );
+}
 .read .create-contact {
     display: inline-block;
     text-decoration: none;
@@ -91,6 +102,7 @@ td{
 .read .pagination {
     display: flex;
     justify-content: flex-end;
+    width: 95%;
 }
 .read .pagination a {
     display: inline-block;
@@ -105,7 +117,8 @@ td{
     opacity: 0.8;
 }
 .read table {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     padding-top: 30px;
     border-collapse: collapse;
 }
@@ -121,9 +134,10 @@ td{
 }
 .read table tbody tr {
     border-bottom: 1px solid #d3dae0;
+    word-wrap: break-word;
 }
 .read table tbody tr:nth-child(even) {
-    background-color: #fbfcfc;
+    background-color: #e4e4e4;
 }
 .read table tbody tr:hover {
     background-color: $secondcol;
@@ -147,8 +161,11 @@ td{
 }
 .read table tbody tr td.actions .edit, .read table tbody tr td.actions .trash {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     text-align: right;
     text-decoration: none;
+    margin: 0.25rem;
     color: $secondcol;
     padding: 10px 12px;
 }
@@ -212,3 +229,18 @@ td{
 .hidden{
     display: none;
 }
+
+
+    @media (max-width:768px) {
+
+        .table{
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+
+    .hidden-info{
+    display: none;
+}}
+
