@@ -1,5 +1,3 @@
-
-
 <?php
 include 'functions.php';
 $pdo = pdo_connect_mysql();
@@ -10,6 +8,7 @@ if (!empty($_POST)) {
     // Set-up the variables that are going to be inserted, we must check if the POST variables exist if not we can default them to blank
     $id = isset($_POST['id']) && !empty($_POST['id']) && $_POST['id'] != 'auto' ? $_POST['id'] : NULL;
     // Check if POST variable "name" exists, if not default the value to blank, basically the same for all variables
+    $id = isset($_POST['id']) ? $_POST['id'] : '';
     $name = isset($_POST['name']) ? $_POST['name'] : '';
     $category = isset($_POST['category']) ? $_POST['category'] : '';
     $description = isset($_POST['description']) ? $_POST['description'] : '';
@@ -17,10 +16,11 @@ if (!empty($_POST)) {
     $price = isset($_POST['price']) ? $_POST['price'] : '';
     $button = isset($_POST['button']) ? $_POST['button'] : '';
     
+    
 
     // Insert new record into the product table
-    $stmt = $pdo->prepare('INSERT INTO product VALUES (?, ?, ?, ?, ?, ?)');
-    $stmt->execute([$name, $category, $price, $description, $subtitle, $button]);
+    $stmt = $pdo->prepare('INSERT INTO product VALUES (?, ?, ?, ?, ?, ?, ?)');
+    $stmt->execute([$id, $name, $category, $description,  $subtitle, $price , $button]);
     // Output message
     $msg = 'Created Successfully!';
     
