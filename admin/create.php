@@ -20,7 +20,7 @@ if (!empty($_POST)) {
 
     // Insert new record into the product table
     $stmt = $pdo->prepare('INSERT INTO product VALUES (?, ?, ?, ?, ?, ?)');
-    $stmt->execute([$name, $category, $description, $subtitle, $price, $button]);
+    $stmt->execute([$name, $category,$price, $description, $subtitle, $button]);
     // Output message
     $msg = 'Created Successfully!';
     
