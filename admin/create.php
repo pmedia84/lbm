@@ -23,7 +23,7 @@ if (!empty($_POST)) {
     $stmt->execute([$id, $name, $category, $description, $subtitle, $price, $button]);
     // Output message
     $msg = 'Created Successfully!';
-    header('Location: price-list.php');
+    
 }
 ?>
 <?php include("nav-admin.inc.php"); ?>
