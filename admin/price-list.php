@@ -56,7 +56,7 @@ $num_products = $pdo->query('SELECT COUNT(*) FROM product')->fetchColumn();
                         <th class="th-description">Description</th>
                         <th class="subtitle">Subtitle</th>
                         <th class="price">Price</th>
-                        <th class="th-extra">Extra</th>
+                        
                         <th class="th-edit">Edit</th>
                     </tr>
             </thead>
@@ -69,7 +69,7 @@ $num_products = $pdo->query('SELECT COUNT(*) FROM product')->fetchColumn();
                     <td><?=$product['description']?></td>
                     <td><?=$product['subtitle']?></td>
                     <td>£<?=$product['price']?></td>
-                    <td><?=$product['button'] = htmlentities($product['button'],ENT_QUOTES)?></td>
+                   
                     <td class="actions">
                         <a href="update.php?id=<?=$product['id']?>" class="edit"><i class="fas fa-pen fa-xs"></i></a>
                         <a href="delete.php?id=<?=$product['id']?>" class="trash"><i class="fas fa-trash fa-xs"></i></a>
