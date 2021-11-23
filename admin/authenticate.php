@@ -1,10 +1,7 @@
 <?php
 session_start();
 // Change this to your connection info.
-$DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'root';
-$DATABASE_PASS = '';
-$DATABASE_NAME = 'admin';
+
 include("../php/connect.php");
 if ( mysqli_connect_errno() ) {
 	// If there is an error with the connection, stop the script and display the error.
