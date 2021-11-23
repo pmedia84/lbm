@@ -411,7 +411,7 @@ nav a {
   appearance: none;
   border: 1px solid #9e6a5b;
   border-radius: 0.25rem;
-  background-image: url("./img/chevron-down.svg");
+  background-image: url("img/chevron-down.svg");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 16px 12px;
