@@ -73,7 +73,7 @@ if (!empty($_POST)) {
 <div class="input-prepend textareapre">
         <span class="input-prepend-text"><i class="fas fa-file-word"></i></span>
     </div>
-    <textarea class="input textarea" id="description" placeholder="Enter Product Description Here *"  spellcheck="true" autocomplete="off"></textarea>
+    <textarea class="input textarea" id="description" placeholder="Enter Product Description Here *"  spellcheck="true" autocomplete="off" name="description"></textarea>
 </div>
 <p>Product Category</p>
         <div class="select-form-wrapper">
