@@ -21,16 +21,13 @@ if (!isset($_SESSION['loggedin'])) {
 <?php
 // We need to use sessions, so you should always start sessions using the below code.
 
-$DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'lashesbr_admin';
-$DATABASE_PASS = 'LBA_2021!';
-$DATABASE_NAME = 'lashesbr_price_list';
-$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+include ("../php/connect.php");
+
 if (mysqli_connect_errno()) {
 	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
 }
 // We don't have the password or email info stored in sessions so instead we can get the results from the database.
-$stmt = $con->prepare('SELECT password, email FROM accounts WHERE id = ?');
+$stmt = $db->prepare('SELECT password, email FROM accounts WHERE id = ?');
 // In this case we can use the account ID to get the account info.
 $stmt->bind_param('i', $_SESSION['id']);
 $stmt->execute();
@@ -72,7 +69,7 @@ $stmt->close();
 
 
 
-include 'functions.php';
+include '../php/connect.php';
 // Connect to MySQL database
 
 
@@ -80,15 +77,16 @@ include 'functions.php';
 
 
 // Prepare the SQL statement and get records from our products table, LIMIT will determine the page
-$query = "SELECT *FROM details ORDER BY id";
-$result = $con->query($query);
-while ($row = $result->fetch_assoc()) {
+$query = "SELECT * FROM details ORDER BY id";
+$result = $db->query($query);
+while ($row = $result->fetch_assoc()){
 $id = $row['id'];
 $name = $row['business_name'];
 $telnum = $row['tel_num'];
 $email = $row['email'];
 
 }
+
 ?>
 <div class="container">
 			<h2>Business Details</h2>
@@ -113,6 +111,53 @@ $email = $row['email'];
 			</div>
 		</div>
 
+
+<div class="container">
+	<?php
+	
+
+
+	$product = "SELECT * FROM product";
+	$product=mysqli_query($db,$product);
+		$rowcount=mysqli_num_rows($product);
+		
+	
+?>
+
+	<h2>Your Price List</h2>
+	<p>You have <?=$rowcount?> items in your price list.</p>
+	<a href="price-list">You can manage you price list here.</a>
+	
+	
+			<div class="index-price-table">
+			<table>
+				<thead>
+							<tr>
+										
+										<th class="name">Name</th>
+										
+										<th >Description</th>
+																				<th class="price">Price</th>
+										
+									
+									</tr>
+							</thead>
+							<tbody>
+								<?php foreach ($product as $product): ?>
+								<tr>
+									
+									<td><?=$product['name']?></td>
+									
+									<td><?=$product['description']?></td>
+																		<td>£<?=$product['price']?></td>
+									
+									
+								</tr>
+								<?php endforeach; ?>
+							</tbody>
+			</table>
+			</div>
+</div>
 
 
 <?php include("footer-admin.inc.php");?>

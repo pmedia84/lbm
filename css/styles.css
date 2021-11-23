@@ -25,6 +25,10 @@ img {
 
 body {
   z-index: -1;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  -webkit-tap-highlight-color: transparent;
 }
 
 nav {
@@ -48,6 +52,15 @@ body::-webkit-scrollbar-thumb {
   background-color: #9e6a5b;
   border-radius: 6px;
   border: 3px solid #fce8e7;
+}
+
+a {
+  text-decoration: none;
+  color: #9e6a5b;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+  outline: black;
 }
 
 .container {
@@ -377,6 +390,38 @@ nav a {
   font-weight: 400;
 }
 
+.select-form-wrapper {
+  padding: 1rem;
+  border: 1px solid #9e6a5b;
+  border-radius: 0.25rem;
+}
+.select-form-wrapper:focus {
+  outline: none;
+  box-shadow: 0 0 2pt 1pt #E66D4C;
+  transition: box-shadow 250ms ease;
+}
+
+.form-select {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  font-size: 1rem;
+  color: #9e6a5b;
+  background-color: #fff;
+  appearance: none;
+  border: 1px solid #9e6a5b;
+  border-radius: 0.25rem;
+  background-image: url("../img/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+}
+.form-select:focus {
+  outline: none;
+  box-shadow: 0 0 2pt 1pt #E66D4C;
+  transition: box-shadow 250ms ease;
+}
+
 .form-text {
   display: none;
 }
@@ -533,8 +578,8 @@ footer i {
   font-size: 1.5rem;
 }
 
-.footer {
-  min-height: 25vh;
+footer {
+  margin-top: auto;
 }
 
 .footer .brand {
@@ -1123,6 +1168,13 @@ td {
     display: none;
   }
 }
+.index-price-table {
+  max-height: 50vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 0.5rem;
+}
+
 /* Style the tab */
 .tab {
   overflow: hidden;

@@ -23,7 +23,12 @@ img{
 
 body{
     z-index: -1;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    -webkit-tap-highlight-color: transparent;
 }
+
 
 
 nav{
@@ -52,4 +57,12 @@ html {
     border: 3px solid $secondcol;
   }
 
- 
+ a{
+   text-decoration: none;
+   color: $primarycol;
+   
+   &:hover,&:focus{
+     text-decoration: underline;
+     outline: black;
+   }
+ }

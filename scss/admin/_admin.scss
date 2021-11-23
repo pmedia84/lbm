@@ -244,3 +244,10 @@ td{
     display: none;
 }}
 
+
+.index-price-table{
+    max-height: 50vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 0.5rem;
+}

@@ -10,13 +10,14 @@ if (isset($_GET['id'])) {
         // This part is similar to the create.php, but instead we update a record and not insert
         $id = isset($_POST['id']) ? $_POST['id'] : NULL;
         $name = isset($_POST['name']) ? $_POST['name'] : '';
+        $category = isset($_POST['category']) ? $_POST['category'] : '';
         $description = isset($_POST['description']) ? $_POST['description'] : '';
         $subtitle = isset($_POST['subtitle']) ? $_POST['subtitle'] : '';
         $price = isset($_POST['price']) ? $_POST['price'] : '';
         $button = isset($_POST['button']) ? $_POST['button'] : '';
         // Update the record
-        $stmt = $pdo->prepare('UPDATE product SET id = ?, name = ?, description = ?, subtitle = ?, price = ?, button = ? WHERE id = ?');
-        $stmt->execute([$id, $name, $description, $subtitle, $price, $button, $_GET['id']]);
+        $stmt = $pdo->prepare('UPDATE product SET id = ?, name = ?, category = ?, description = ?, subtitle = ?, price = ?, button = ? WHERE id = ?');
+        $stmt->execute([$id, $name, $category, $description, $subtitle, $price, $button, $_GET['id']]);
         $msg = 'Updated Successfully!';
     
     
@@ -72,7 +73,7 @@ if (isset($_GET['id'])) {
             <div class="input-prepend">
                 <span class="input-prepend-text"><i class="fas fa-pound-sign"></i></span>
             </div>
-            <input class="text-input input" type="text" name="price" placeholder="Price" value="<?=$product['price']?>" id="title">
+            <input class="text-input input" type="text" name="price" placeholder="Price" value="<?=$product['price']?>.00" id="title">
         </div>
         <div class="inputwrapper admin-wrapper">
             <div class="input-prepend textareapre">
@@ -89,7 +90,26 @@ if (isset($_GET['id'])) {
             </div>
             <textarea class="input textarea" id="description" placeholder="Enter Product Description Here *"  spellcheck="true" autocomplete="off"><?=$product['description']?></textarea>
         </div>
-   
+        <p>Product Category</p>
+        <div class="select-form-wrapper">
+            <select class="form-select" name="category" id="">
+                <option value="<?=$product['category']?>" selected><?=$product['category']?></option>
+                <?php
+            //db connection
+            $query = $pdo->query('SELECT id, name from product_category order by id');
+            
+            // Loop through the query results, outputing the options one by one
+            while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
+                echo "<option value='" . $row['name'] ."'>" . $row['name'] ."</option>";
+            
+            }
+            
+            
+            
+            ?>
+            </select>
+        </div>
+
    
         <input type="submit" value="Update">
    

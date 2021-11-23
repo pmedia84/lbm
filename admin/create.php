@@ -11,14 +11,16 @@ if (!empty($_POST)) {
     $id = isset($_POST['id']) && !empty($_POST['id']) && $_POST['id'] != 'auto' ? $_POST['id'] : NULL;
     // Check if POST variable "name" exists, if not default the value to blank, basically the same for all variables
     $name = isset($_POST['name']) ? $_POST['name'] : '';
+    $category = isset($_POST['category']) ? $_POST['category'] : '';
     $description = isset($_POST['description']) ? $_POST['description'] : '';
     $subtitle = isset($_POST['subtitle']) ? $_POST['subtitle'] : '';
     $price = isset($_POST['price']) ? $_POST['price'] : '';
     $button = isset($_POST['button']) ? $_POST['button'] : '';
+    
 
     // Insert new record into the product table
-    $stmt = $pdo->prepare('INSERT INTO product VALUES (?, ?, ?, ?, ?, ?)');
-    $stmt->execute([$id, $name, $description, $subtitle, $price, $button]);
+    $stmt = $pdo->prepare('INSERT INTO product VALUES (?, ?, ?, ?, ?, ?, ?)');
+    $stmt->execute([$id, $name, $category, $description, $subtitle, $price, $button]);
     // Output message
     $msg = 'Created Successfully!';
     header('Location: price-list.php');
@@ -66,8 +68,32 @@ if (!empty($_POST)) {
             </div>
             <textarea class="input textarea" type="text" name="button" placeholder="Copy Button Script Here" value=""id="button"></textarea>
         </div>
-        <textarea class="input textarea" id="description" placeholder="Enter Product Description Here *" spellcheck="true" autocomplete="off"></textarea>
+        <div class="inputwrapper admin-wrapper">
 
+<div class="input-prepend textareapre">
+        <span class="input-prepend-text"><i class="fas fa-file-word"></i></span>
+    </div>
+    <textarea class="input textarea" id="description" placeholder="Enter Product Description Here *"  spellcheck="true" autocomplete="off"></textarea>
+</div>
+<p>Product Category</p>
+        <div class="select-form-wrapper">
+            <select class="form-select" name="category" id="">
+              
+                <?php
+            //db connection
+            $query = $pdo->query('SELECT id, name from product_category order by id');
+            
+            // Loop through the query results, outputing the options one by one
+            while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
+                echo "<option value='" . $row['name'] ."'>" . $row['name'] ."</option>";
+            
+            }
+            
+            
+            
+            ?>
+            </select>
+        </div>
         <input type="submit" value="Create">
     </form>
     <?php if ($msg) : ?>
