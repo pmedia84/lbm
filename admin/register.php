@@ -3,8 +3,8 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 require $_SERVER['DOCUMENT_ROOT'].'/mailer/PHPMailer.php';
-require $_SERVER['DOCUMENT_ROOT'].'/includes/mailer/SMTP.php';
-require $_SERVER['DOCUMENT_ROOT'].'/includes/mailer/Exception.php';
+require $_SERVER['DOCUMENT_ROOT'].'/mailer/SMTP.php';
+require $_SERVER['DOCUMENT_ROOT'].'/mailer/Exception.php';
 include("nav-login.inc.php");
 include('../php/connect.php');
 // Try and connect using the info above.

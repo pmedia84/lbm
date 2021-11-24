@@ -47,9 +47,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-require $_SERVER['DOCUMENT_ROOT'].'/lbm/mailer/PHPMailer.php';
-require $_SERVER['DOCUMENT_ROOT'].'/lbm/includes/mailer/SMTP.php';
-require $_SERVER['DOCUMENT_ROOT'].'/lbm/includes/mailer/Exception.php';
+require $_SERVER['DOCUMENT_ROOT'].'/mailer/PHPMailer.php';
+require $_SERVER['DOCUMENT_ROOT'].'/mailer/SMTP.php';
+require $_SERVER['DOCUMENT_ROOT'].'/mailer/Exception.php';
 
 include("../php/connect.php");
 if (mysqli_connect_errno()){
@@ -97,9 +97,9 @@ VALUES ('".$email."', '".$key."', '".$expDate."');");
 $output='<p>Dear user,</p>';
 $output.='<p>Please click on the following link to reset your password.</p>';
 $output.='<p>-------------------------------------------------------------</p>';
-$output.='<p><a href="http://localhost/lbm/admin/resetpw.php?
+$output.='<p><a href="https://www.lashesbrowsandaesthetics.co.uk/admin/resetpw.php?
 key='.$key.'&email='.$email.'&action=reset" target="_blank">
-http://localhost/lbm/admin/resetpw.php
+https://www.lashesbrowsandaesthetics.co.uk/admin/resetpw.php
 ?key='.$key.'&email='.$email.'&action=reset</a></p>';		
 $output.='<p>-------------------------------------------------------------</p>';
 $output.='<p>Please be sure to copy the entire link into your browser.
