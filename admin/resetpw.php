@@ -60,7 +60,7 @@ $error.= "<p>Password do not match, both passwords should be same.<br /><br /></
   if($error!=""){
 echo "<div class='error'>".$error."</div><br />";
 }else{
-$pass1 = md5($pass1);
+$pass1 = password_hash($_POST['password'], PASSWORD_DEFAULT);
 mysqli_query($db,
 "UPDATE `accounts` SET `password`='".$pass1."', `trn_date`='".$curDate."' 
 WHERE `email`='".$email."';"
