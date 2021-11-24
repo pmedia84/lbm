@@ -1231,6 +1231,20 @@ td {
     opacity: 1;
   }
 }
+.login-tab {
+  padding: 0;
+  border-radius: 0 !important;
+  border: 0;
+}
+
+.tabcontent-login {
+  padding: 2.5rem 0 0 0;
+}
+
+.tabcontent-textbox {
+  padding: 1rem;
+}
+
 .social {
   display: inline-flex;
   flex-direction: row;
