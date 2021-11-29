@@ -6,7 +6,7 @@
     <meta name="description" content="About me, I love to transform your look with my amazing Treatments.">
     <?php include("php/nav.inc.php");
     include("php/connect.php") ?>
-
+<script id="timelyScript" src="//book.gettimely.com/widget/book-button-v1.5.js"></script>
     <header>
         <section class="aestheticshero hero containerfw ">
             <div class="container herogrid">
