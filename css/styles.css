@@ -679,6 +679,7 @@ footer {
   background-color: #61514f;
   background-blend-mode: soft-light;
   color: #f0f0f0;
+  height: 40vh;
 }
 
 .herogrid {
