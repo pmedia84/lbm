@@ -11,8 +11,8 @@
     <header>
         <section class="hero containerfw">
             <div class="container herogrid">
-                <h2 class="herotitle">Eyelash Extensions</h2>
-                <p class="herotext">Semi Permanent Eyelash Extensions Offering Beautiful Handmade Russian Volume and Classic Style Individual Lash Extensions.</p>
+                <h1 class="herotitle">Lashes, Brows and Aesthetics</h1>
+                <p class="herotext">Transform your look with my amazing Eyelash, Eyebrow and Aesthetics Treatments</p>
 
                 <a href="contact" class="btn herobtn">Contact me</a>
             </div>
@@ -21,31 +21,31 @@
         <main>
         <section class="container">
             <div class="banner">
-                <h1 class="bannertitle m-b-1">Professional Eyelash Extensions</h1>
+                <h2 class="bannertitle m-b-1">Professional Beauty Treatments</h2>
                 <h3 class="bannersubtitle m-b-1">I Love making you look and feel amazing...</h3>
-                <p class="bannertext m-b-1">Transform your eyelashes to be fuller, longer and curlier for a sensational look.</p>
+                <p class="bannertext m-b-1">I am excited to now offer you my amazing Aesthetics treatments. <a href="aesthetics">Find Out More</a></p>
             </div>
 
             <div class="cardcontainer">
                 <div class="card">
-                    <img src="img/lashes.jpg" alt="" class="card-img">
+                    <img src="img/lashes.jpg" alt="Eyelash Extensions from Lashes Brows and Aesthetics" class="card-img">
                     <div class="cardtext">
                         <h3 class="card-title">Lashes</h3>
                         <p class="card-text">The Window To Your Soul</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/mos-img4.jpg" alt="" class="card-img">
+                    <img src="img/mos-img4.jpg" alt="Eyebrow Enhancements from Lashes Brows and Aesthetics" class="card-img">
                     <div class="cardtext">
                         <h3 class="card-title">Brows</h3>
                         <p class="card-text">The Frame To That Window</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/skincare.jpg" alt="" class="card-img">
+                    <img src="img/dermal.jpg" alt="Aesthetics Treatments from Lashes Brows and Aesthetics" class="card-img">
                     <div class="cardtext">
-                        <h3 class="card-title">Dermaplaning</h3>
-                        <p class="card-text">No More Peach Fuzz.</p>
+                        <h3 class="card-title">Aesthetics</h3>
+                        <p class="card-text">Amazing Results</p>
                     </div>
                 </div>
             </div>

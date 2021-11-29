@@ -11,11 +11,9 @@
 }
 
 .herogrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 1fr 50px;
-    row-gap: 0.9rem;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .herotitle{
@@ -28,9 +26,10 @@
 
 }
 .herobtn{
-    grid-column: 1/4;
-    grid-row: 4/4;
-    justify-self: start;
+    max-width: max-content;
+    &:hover{
+        text-decoration: none;
+    }
 }
 
 // Price List Page

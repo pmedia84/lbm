@@ -30,7 +30,7 @@
                 <h2 class="mt-b-1 textbox-title">Dermal Fillers</h2>
                 <p class="content mp-b-1 textbox-subtitle">Gain immediate and visible results</p>
                 <p class="content mp-b-1 textbox-text">Are a Hyaluronic Acid, which is found in the skin , in the eyes and joints, it’s mixed with other ingredients to make it into a gel.
-                    It’s used to add plumpness and enhance the areas that loose elasticity as we get older. <br><br>Currently I’m offering Dermal Filler for the lips, Marionette lines ( running from mouth to chin) and Nasolabial Lines ( laughter lines running from the nose to the mouth)
+                    It’s used to add plumpness and enhance the areas that loose elasticity as we get older. <br><br>Currently I’m offering Dermal Filler for the lips, Marionette lines (running from mouth to chin) and Nasolabial Lines (laughter lines running from the nose to the mouth)
                 </p>
 
             </div>
@@ -55,7 +55,7 @@
             <div class="firstitem textbox">
                 <h2 class="mt-b-1 textbox-title">Vitamin B12</h2>
                 <p class="content mp-b-1 textbox-subtitle">Increases energy levels and concentration and many other benefits!</p>
-                <p class="content mp-b-1 textbox-text">The benefits of this are endless, to name but a few, B12 helps with Fatigue, helps with energy levels, boosts the immune system, aids sleep patterns, helps with the menopause, lack of iron, improves metabolism and can aid weight loss, these are just a few of what this wonderful vitamin can do.
+                <p class="content mp-b-1 textbox-text">The benefits of this are endless, B12 helps with Fatigue, energy levels, boosts the immune system, aids sleep patterns, menopause, lack of iron, improves metabolism and can aid weight loss, these are just a few of what this wonderful vitamin can do.
                 </p>
 
             </div>
