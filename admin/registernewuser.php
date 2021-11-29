@@ -15,14 +15,14 @@ include('nav-admin.inc.php');
 			<h1>Register</h1>
             <p style="text-align: center;">Register a new user for your admin console</p>
 			<form action="register.php" method="post" autocomplete="off">
-
+			<p>Please use your email address</p>
 				<div class="inputwrapper admin-wrapper">
-
+				
 					<div class="input-prepend">
 						<span class="input-prepend-text"><i class="fas fa-user"></i></span>
 					</div>
-
-					<input class="text-input input" type="text" name="username" placeholder="Username" id="username" required>
+					
+					<input class="text-input input" type="text" name="username" placeholder="Name" id="username" required>
 				</div>
 
 
@@ -41,7 +41,7 @@ include('nav-admin.inc.php');
 						<i class="fas fa-at"></i>
 					</div>
 
-					<input class="text-input input" type="email" name="email" placeholder="Email" id="email" required>
+					<input class="text-input input" type="email" name="email" placeholder="Email Address" id="email" required>
 				</div>
 
 				<input type="submit" value="Register">

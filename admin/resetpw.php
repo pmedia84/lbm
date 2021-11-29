@@ -41,7 +41,7 @@ $error .= "<h2>Link Expired</h2>
 as valid only 24 hours (1 days after request).<br /><br /></p>";
             }
       }
-if(!$error=""){
+if($error=""){
   echo "<div class='error'>".$error."</div><br />";
   }			
 } // isset email key validate end
@@ -52,6 +52,7 @@ if(isset($_POST["email"]) && isset($_POST["action"]) &&
 $error="";
 $pass1 = mysqli_real_escape_string($db,$_POST["pass1"]);
 $pass2 = mysqli_real_escape_string($db,$_POST["pass2"]);
+$password = password_hash($pass1, PASSWORD_DEFAULT);
 $email = $_POST["email"];
 $curDate = date("Y-m-d H:i:s");
 if ($pass1!=$pass2){
@@ -60,9 +61,9 @@ $error.= "<p>Password do not match, both passwords should be same.<br /><br /></
   if($error!=""){
 echo "<div class='error'>".$error."</div><br />";
 }else{
-$pass1 = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
 mysqli_query($db,
-"UPDATE `accounts` SET `password`='".$pass1."', `trn_date`='".$curDate."' 
+"UPDATE `accounts` SET `password`='".$password."' 
 WHERE `email`='".$email."';"
 );
 

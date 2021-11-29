@@ -21,7 +21,7 @@
 <section class="container p-top-0 p-bt-0 full-width">
     
         <div class="gridcontainer">
-            <img class="seconditem img-fit" src="img/hybridlashes.jpg" alt="">
+            <img class="seconditem img-fit" src="img/hybridlashes.jpg" alt="Eye Lash Treatments by Lashes, Brows and Aesthetics">
             <div class="p-1 firstitem textbox">
                 <h2 class="mt-b-1 textbox-title">Lashes</h2>
                 <p class="content mp-b-1 textbox-subtitle">Eyes Are The Window To Your Soul</p>
@@ -37,7 +37,7 @@ The look can vary from subtle, being Classic to extremely dramatic with Extreme 
         </div>
 
     <div class="gridcontainer">
-            <img class="img-fit" src="img/hennabrow.jpg" alt="">
+            <img class="img-fit" src="img/hennabrow.jpg" alt="Eye Brow Treatments by Lashes, Brows and Aesthetics">
             <div class="p-1 textbox">
                 <h2 class="mt-b-1 textbox-title">Brows</h2>
                 <p class="content mp-b-1 textbox-subtitle">If Eyes Are The Window To Your Soul, Then Brows Are The Frame To That Window</p>
@@ -50,7 +50,7 @@ The look can vary from subtle, being Classic to extremely dramatic with Extreme 
         </div>
 
         <div class="gridcontainer">
-            <img class="seconditem img-fit" src="img/dermaplaning.jpg" alt="">
+            <img class="seconditem img-fit" src="img/dermaplaning.jpg" alt="Dermaplaning Treatments by Lashes, Brows and Aesthetics">
             <div class="p-1 firstitem textbox">
                 <h2 class="mt-b-1 textbox-title">Derma Planing</h2>
                 <p class="content mp-b-1 textbox-subtitle">Anti-aging Skincare treatments without the chemicals</p>
@@ -66,6 +66,25 @@ Finished alongside with a relaxing prescription facial using Eve Taylor Products
             </div>
         </div>
 
+
+        <div class="gridcontainer">
+            <img class="img-fit" src="img/light-therapy.jpg" alt="Aesthetics Treatments now available from Lashes Brows and Aesthetics">
+            <div class="p-1 textbox">
+                <h2 class="mt-b-1 textbox-title">Aesthetics</h2>
+                <p class="content mp-b-1 textbox-subtitle"></p>
+                <p class="content mp-b-1 textbox-text">Aesthetics are becoming a main part of the Beauty Industry, and I’m pleased to say that I’m fully trained and qualified to be able to offer it all to my clients. 
+I’m also trained in complications, first aid and body dysmorphia , so I won’t let you go out looking like the bride of Frankenstein!
+</p>
+                <ul class="fa-ul content textbox-text">
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Dermal Fillers</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Anti Wrinkle Treatments</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Vitamin B12 Injections</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Skin Peel</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Micro Needling</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Steam Induction and Light Therapy Facial</li>
+                </ul>
+            </div>
+        </div>
 </section>
    
 

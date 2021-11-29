@@ -538,6 +538,7 @@ nav a {
 
 .textbox {
   background-color: rgba(252, 232, 231, 0.7);
+  padding: 1.5rem;
 }
 
 .textbox-title {
@@ -1173,6 +1174,13 @@ td {
   overflow: scroll;
   overflow-x: hidden;
   padding: 0.5rem;
+}
+
+.error {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 2.5rem;
 }
 
 /* Style the tab */

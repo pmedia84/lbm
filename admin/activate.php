@@ -1,4 +1,5 @@
 <?php
+include("nav-login.inc.php");
 // Change this to your connection info.
 include('../php/connect.php');
 // Try and connect using the info above.
@@ -21,11 +22,14 @@ if (isset($_GET['email'], $_GET['code'])) {
 				$newcode = 'activated';
 				$stmt->bind_param('sss', $newcode, $_GET['email'], $_GET['code']);
 				$stmt->execute();
-				echo 'Your account is now activated! You can now <a href="login">login</a>!';
+				echo '<div class="container">Your account is now activated! You can now <a href="login">login</a>!</div>';
 			}
 		} else {
-			echo 'The account is already activated or doesn\'t exist!';
+			echo '<div class="container">The account is already activated or doesn\'t exist!
+					<p>Try logging in <a href="login">here</a>. Or contact your system admin.</div>'
+				;
 		}
 	}
 }
+include("footer-admin.inc.php");
 ?>

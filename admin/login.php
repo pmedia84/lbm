@@ -4,7 +4,7 @@
         <!-- Tab links -->
         <div class="tab login-tab">
             <button class="tablinks" onclick="opentab(event, 'login')" id="defaultOpen">Login</button>
-            <button class="tablinks" onclick="opentab(event, 'resetpw')">Forgot Password</button>
+            <button class="tablinks" onclick="opentab(event, 'resetpw')" id="reset">Forgot Password</button>
 
         </div>
 
@@ -38,7 +38,7 @@
 
 
 	</form>
-
+	<button onclick="stayontab">test</button>
 		</div>
 		<div id="resetpw" class="tabcontent tabcontent-login">
 		
@@ -47,9 +47,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-require $_SERVER['DOCUMENT_ROOT'].'/mailer/PHPMailer.php';
-require $_SERVER['DOCUMENT_ROOT'].'/mailer/SMTP.php';
-require $_SERVER['DOCUMENT_ROOT'].'/mailer/Exception.php';
+require $_SERVER['DOCUMENT_ROOT'].'/lbm/mailer/PHPMailer.php';
+require $_SERVER['DOCUMENT_ROOT'].'/lbm/mailer/SMTP.php';
+require $_SERVER['DOCUMENT_ROOT'].'/lbm/mailer/Exception.php';
 
 include("../php/connect.php");
 if (mysqli_connect_errno()){
@@ -76,11 +76,14 @@ if (!$email) {
    $row = mysqli_num_rows($results);
    if ($row==""){
    $error .= "<p>No user is registered with this email address!</p>";
+   
    }
   }
-   if($error!=""){
-   echo "<div class='error'>".$error."</div>
-   <br /><a href='javascript:history.go(-1)'>Go Back</a>";
+   if(!$error=""){
+   echo "<div class='error'>".$error."
+   <p>No user is registered with this email address!</p>
+   <br /><a href='javascript:history.go(-1)'>Go Back</a></div>";
+
    }else{
    $expFormat = mktime(
    date("H"), date("i"), date("s"), date("m") ,date("d")+1, date("Y")
@@ -97,9 +100,8 @@ VALUES ('".$email."', '".$key."', '".$expDate."');");
 $output='<p>Dear user,</p>';
 $output.='<p>Please click on the following link to reset your password.</p>';
 $output.='<p>-------------------------------------------------------------</p>';
-$output.='<p><a href="https://www.lashesbrowsandaesthetics.co.uk/admin/resetpw.php?
-key='.$key.'&email='.$email.'&action=reset" target="_blank">
-https://www.lashesbrowsandaesthetics.co.uk/admin/resetpw.php
+$output.='<p><a href="http://localhost/lbm/admin/resetpw.php?key='.$key.'&email='.$email.'&action=reset" target="_blank">
+http://localhost/lbm/admin/resetpw.php
 ?key='.$key.'&email='.$email.'&action=reset</a></p>';		
 $output.='<p>-------------------------------------------------------------</p>';
 $output.='<p>Please be sure to copy the entire link into your browser.
@@ -148,28 +150,28 @@ echo "
 <h1>Reset your password here</h1>
 <p class="tabcontent-textbox">If you are having problems logging in to your account then enter your email address below, and we will send you instructions to reset your password.</p>
 
-	<form action="" method="post" autocomplete="off">
+	<form onsubmit="return stayontab" action="" method="post" autocomplete="off">
 		
 		<div class="inputwrapper admin-wrapper">
 
 			<div class="input-prepend">
-				<span class="input-prepend-text"><i class="fas fa-user"></i></span>
+				<span class="input-prepend-text"><i class="fas fa-at"></i></span>
 			</div>
 
-			<input class="text-input input" type="email" name="email" placeholder="Username" id="username" autocomplete="off" required>
+			<input class="text-input input" type="email" name="email" placeholder="Email Address" id="username" autocomplete="off" required>
 		</div>
 
 
 
 	
 
-
+		
 		<input type="submit" value="Reset Password"/>
-
+		
 
 
 	</form>
-
+	
 
 
 
@@ -203,5 +205,10 @@ echo "
 	  document.getElementById("defaultOpen").click();
 	 
 </script>
-
+<script>
+			function stayontab(){
+				document.getElementById("reset").click();
+			}
+			
+		</script>
 <?php include("footer-admin.inc.php"); ?>

@@ -101,5 +101,5 @@ I use top quality premium products, my lashes & other products are all cruelty f
         </section>
 
     </main>
-
+    <script src="js/more.js"></script>
     <?php include("php/footer.inc.php"); ?>
