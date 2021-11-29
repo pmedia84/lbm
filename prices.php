@@ -43,8 +43,8 @@
         <div class="tab">
             <button class="tablinks" onclick="openCity(event, 'lashes')" id="defaultOpen">Lashes</button>
             <button class="tablinks" onclick="openCity(event, 'brows')">Brows</button>
-            <button class="tablinks" onclick="openCity(event, 'other')">Other</button>
             <button class="tablinks" onclick="openCity(event, 'aesthetics')">Aesthetics</button>
+            <button class="tablinks" onclick="openCity(event, 'other')">Other</button>
         </div>
         <!-- Tab content -->
         <div id="lashes" class="tabcontent pricelist">
@@ -149,12 +149,7 @@
             <div class="pricelist">
 
                 <?php
-
-
-
-
-
-                $query = "SELECT id, name, description, subtitle, price, button, category FROM product where category ='other'  ORDER BY id";
+                 $query = "SELECT id, name, description, subtitle, price, button, category FROM product where category ='other'  ORDER BY id";
                 $result = $db->query($query);
                 while ($row = $result->fetch_assoc()) {
                     $id = $row['id'];
