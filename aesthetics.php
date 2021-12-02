@@ -38,7 +38,7 @@
 
 
         <div class="gridcontainer">
-            <img class="firstitem img-fit" src="img/no-image.jpg" alt="Anti Wrinkle Treatments from Lashes, Brows and Aesthetics">
+            <img class="firstitem img-fit" src="img/anti-wrinkle.jpg" alt="Anti Wrinkle Treatments from Lashes, Brows and Aesthetics">
             <div class="seconditem textbox">
                 <h2 class="mt-b-1 textbox-title">Anti Wrinkle Treatments</h2>
                 <p class="content mp-b-1 textbox-subtitle">Dramatically reduce visible signs of aging, fine lines & wrinkles</p>

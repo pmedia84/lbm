@@ -670,108 +670,6 @@ footer {
   font-size: 1rem;
 }
 
-.hero {
-  background-image: url("../img/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 2.5vh;
-  background-color: #61514f;
-  background-blend-mode: soft-light;
-  color: #f0f0f0;
-  height: 40vh;
-}
-
-.herogrid {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.herotitle {
-  grid-row: 1/1;
-  grid-column: 1/4;
-}
-
-.herotext {
-  grid-row: 2/3;
-  grid-column: 1/4;
-}
-
-.herobtn {
-  max-width: max-content;
-}
-.herobtn:hover {
-  text-decoration: none;
-}
-
-.pricehero {
-  background-image: url("../img/price-hero.jpg");
-  background-color: #fcc5c5;
-  background-blend-mode: multiply;
-  max-height: 50vh;
-}
-
-.contacthero {
-  background-image: url("../img/contact-hero2.png");
-  max-height: 50vh;
-  background-color: white;
-  background-blend-mode: multiply;
-}
-
-.contact-title {
-  text-align: center;
-}
-
-.openinghrs table {
-  margin-left: auto;
-  margin-right: auto;
-}
-.openinghrs table td {
-  padding: 0 0.5rem 0 0.5rem;
-}
-
-.openinghrs .opentitle {
-  text-align: center;
-}
-.openinghrs p {
-  margin-bottom: 0.5rem;
-}
-.openinghrs .day, .openinghrs .hrs {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.contactdetails {
-  max-width: 400px;
-  margin: 0 auto;
-  margin-bottom: 1.5rem;
-}
-.contactdetails ul {
-  line-height: 1.7;
-  font-family: "Montserrat", sans-serif;
-}
-.contactdetails li {
-  letter-spacing: 1.25px;
-  font-size: 1rem;
-  word-wrap: break-word;
-}
-.contactdetails .fa-li {
-  color: #9e6a5b;
-}
-
-.abouthero {
-  background-image: url("../img/about-hero.jpg");
-  max-height: 50vh;
-  background-color: #fcc5c5;
-  background-blend-mode: multiply;
-}
-
-.aestheticshero {
-  background-image: url("../img/aesthetics-hero.jpg");
-}
-
 .p-top-0 {
   padding-top: 0;
 }
@@ -1184,6 +1082,30 @@ td {
   padding-bottom: 2.5rem;
 }
 
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  place-items: center;
+  gap: 2rem;
+}
+
+.dashboard-icon-wrapper {
+  display: grid;
+  text-align: center;
+  padding: 0.5rem;
+  color: black;
+  background-color: whitesmoke;
+  height: 150px;
+  width: 150px;
+  box-shadow: 4px 2px 4px 0px rgba(148, 148, 148, 0.82);
+  -webkit-box-shadow: 4px 2px 4px 0px rgba(148, 148, 148, 0.82);
+  -moz-box-shadow: 4px 2px 4px 0px rgba(148, 148, 148, 0.82);
+}
+
+.dashboard-icon {
+  font-size: 2rem;
+}
+
 /* Style the tab */
 .tab {
   overflow: hidden;
@@ -1252,6 +1174,111 @@ td {
 
 .tabcontent-textbox {
   padding: 1rem;
+}
+
+.hero {
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2.5vh;
+  background-color: #61514f;
+  background-blend-mode: soft-light;
+  color: #f0f0f0;
+  min-height: 40vh;
+}
+
+.herogrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.herotitle {
+  grid-row: 1/1;
+  grid-column: 1/4;
+}
+
+.herotext {
+  grid-row: 2/3;
+  grid-column: 1/4;
+}
+
+.herobtn {
+  max-width: max-content;
+}
+.herobtn:hover {
+  text-decoration: none;
+}
+
+.pricehero {
+  background-image: url("../img/price-hero.jpg");
+  background-color: #fcc5c5;
+  background-blend-mode: multiply;
+  max-height: 50vh;
+}
+
+.contacthero {
+  background-image: url("../img/contact-hero2.png");
+  max-height: 50vh;
+  background-color: white;
+  background-blend-mode: multiply;
+}
+
+.contact-title {
+  text-align: center;
+}
+
+.openinghrs table, th, td {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  border: 0 !important;
+  border-color: initial;
+}
+.openinghrs table td, th td, td td {
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.openinghrs .opentitle {
+  text-align: center;
+}
+.openinghrs p {
+  margin-bottom: 0.5rem;
+}
+.openinghrs .day, .openinghrs .hrs {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.contactdetails {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.contactdetails ul {
+  line-height: 1.7;
+  font-family: "Montserrat", sans-serif;
+}
+.contactdetails li {
+  letter-spacing: 1.25px;
+  font-size: 1rem;
+  word-wrap: break-word;
+}
+.contactdetails .fa-li {
+  color: #9e6a5b;
+}
+
+.abouthero {
+  background-image: url("../img/about-hero.jpg");
+  max-height: 50vh;
+  background-color: #fcc5c5;
+  background-blend-mode: multiply;
+}
+
+.aestheticshero {
+  background-image: url("../img/aesthetics-hero.jpg");
 }
 
 .social {

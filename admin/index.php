@@ -13,7 +13,37 @@ if (!isset($_SESSION['loggedin'])) {
 <?php
 
 
-include("../php/connect.php");
+
+
+
+
+include '../php/connect.php';
+// Connect to MySQL database
+
+
+
+
+$product = "SELECT * FROM product";
+$product = mysqli_query($db, $product);
+$rowcount = mysqli_num_rows($product);
+
+
+
+
+// Number of records to show on each page
+
+
+// Prepare the SQL statement and get records from our products table, LIMIT will determine the page
+$query = "SELECT * FROM details ORDER BY id";
+$result = $db->query($query);
+while ($row = $result->fetch_assoc()) {
+	$id = $row['id'];
+	$name = $row['business_name'];
+	$telnum = $row['tel_num'];
+	$email = $row['email'];
+}
+
+
 
 if (mysqli_connect_errno()) {
 	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
@@ -28,7 +58,37 @@ $stmt->fetch();
 $stmt->close();
 ?>
 
-<body class="loggedin">
+<body class="">
+
+<section class="dashboard container">
+<div class="dashboard-icon-wrapper">
+		
+				<p>Products</p>
+				<i class="fas fa-tags dashboard-icon"></i>
+				<p><?= $rowcount ?> items</p>
+				<a href="price-list">View More</a>
+		</div>
+			
+		
+			<div class="dashboard-icon-wrapper">
+			<p>User Profile</p>
+				<i class="fas fa-user dashboard-icon"></i>
+				<p><?= $_SESSION['name'] ?></p>
+			<a href="profile">Edit Profile</a>
+			</div>
+		
+			<div class="dashboard-icon-wrapper">
+			<p>Business Profile</p>
+			<i class="fas fa-building dashboard-icon"></i>
+			<a href="price-list">Edit Profile</a>
+			</div>
+
+			<div class="dashboard-icon-wrapper">
+			<p>Users</p>
+			<i class="fas fa-users dashboard-icon"></i>
+			<a href="price-list">Edit Users</a>
+			</div>
+</section>
 	<section class="navadmin container">
 		<div>
 			<h1>Your Account Details: <?= $_SESSION['name'] ?></h1>
@@ -36,7 +96,7 @@ $stmt->close();
 		</div>
 	</section>
 	<div class="container">
-		<h2>Your Profile</h2>
+		<p>Your Profile</p>
 		<div>
 			<p>Your account details are below:</p>
 			<table>
@@ -61,28 +121,7 @@ $stmt->close();
 	</div>
 
 
-	<?php
 
-
-
-	include '../php/connect.php';
-	// Connect to MySQL database
-
-
-	// Number of records to show on each page
-
-
-	// Prepare the SQL statement and get records from our products table, LIMIT will determine the page
-	$query = "SELECT * FROM details ORDER BY id";
-	$result = $db->query($query);
-	while ($row = $result->fetch_assoc()) {
-		$id = $row['id'];
-		$name = $row['business_name'];
-		$telnum = $row['tel_num'];
-		$email = $row['email'];
-	}
-
-	?>
 	<div class="container">
 		<h2>Business Details</h2>
 		<div>
@@ -90,11 +129,11 @@ $stmt->close();
 			<p>Ensure this information is up to date at all times</p>
 			<table>
 				<tr>
-					<td>Username:</td>
+					<td>Name:</td>
 					<td><?= $name ?></td>
 				</tr>
 				<tr>
-					<td>Password:</td>
+					<td>Telephone Number:</td>
 					<td><?= $telnum ?></td>
 				</tr>
 				<tr>
