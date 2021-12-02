@@ -38,7 +38,7 @@
 
 
 	</form>
-	<button onclick="stayontab">test</button>
+	
 		</div>
 		<div id="resetpw" class="tabcontent tabcontent-login">
 		
@@ -205,10 +205,5 @@ echo "
 	  document.getElementById("defaultOpen").click();
 	 
 </script>
-<script>
-			function stayontab(){
-				document.getElementById("reset").click();
-			}
-			
-		</script>
+
 <?php include("footer-admin.inc.php"); ?>
