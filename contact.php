@@ -131,7 +131,7 @@
                 <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fas fa-map-marker"></i></span>Beaut Hair Design, 16 Little London, Long Sutton, PE12 9LE</li>
                     <li><span class="fa-li"><i class="fas fa-mobile-alt"></i></i></span>07827 962740</li>
-                    <li><span class="fa-li"><i class="far fa-paper-plane"></i></i></i></span>mandi@lashesbrowsandaesthetics.co.uk</li>
+
                 </ul>
             </div>
         </div>

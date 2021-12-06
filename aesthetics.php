@@ -106,7 +106,7 @@ The benefits of a steam facial include extra cleansing, it promotes circulation,
         </div>
     </section>
     <div class="container banner p-bt-0">
-        <h2>Our Price List for Aesthetics</h2>
+        <h2>My Price List For Aesthetics</h2>
     </div>
     <section class="pricelist container">
 

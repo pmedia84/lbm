@@ -1,2 +1,2 @@
-<a href="https://www.facebook.com/Lashes-Brows-By-Mandi-154162108003593" target="_blank" rel="noopener"><i class="fa fa-facebook-official social-icon"></i></a>
-<a href="https://www.instagram.com/lashes_love_brows/" target="_blank" rel="noopener"><i class="fa fa-instagram social-icon"></i></a>
+<a href="https://www.facebook.com/Lashes-Brows-Aesthetics-154162108003593/" target="_blank" rel="noopener"><i class="fa fa-facebook-official social-icon"></i></a>
+<a href="https://www.instagram.com/lashes_brows_aesthetics/" target="_blank" rel="noopener"><i class="fa fa-instagram social-icon"></i></a>

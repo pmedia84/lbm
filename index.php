@@ -84,7 +84,7 @@ I use top quality premium products, my lashes & other products are all cruelty f
 
         <section>
         <div class="container banner p-top-2">
-            <h1 class="bannertitle m-b-0">Some of my work...</h1>
+            <h1 class="bannertitle m-b-0">Some Of My Work...</h1>
         </div>
         
             <?php include("php/mosaic.inc.php"); ?>
