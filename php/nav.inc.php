@@ -5,8 +5,8 @@
 <meta name="theme-color" content="#f9d4d2">
 <meta name="keywords" content="lashes, brows, aesthetics, Long Sutton, Lincolnshire, eyelash extensions, dermaplaning">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:title" content= "$title - Beauty" />
-<meta property="og:description" content="Transform your eyelashes to be fuller, longer and curlier for a sensational look" />
+<meta property="og:title" content= " Lashes Brows and Aesthetics - Beauty" />
+<meta property="og:description" content="Transform your look with some great treatments!" />
 <meta property="og:image" content="https://lashesandbrowsbymandi.co.uk/og-data/logo.png"/>
 <meta property="og:type" content="website" />
 
