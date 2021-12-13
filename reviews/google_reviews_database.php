@@ -121,9 +121,19 @@ if($state == true && $no_reviews >= 1) {
             mysqli_query($db, "INSERT INTO `reviews` (author_name,author_url,profile_photo_url,rating,relative_time,text,date_time) VALUES ('$author_name','$author_url','$profileimg','$rating','$relative_time','$text','$date')") or die($db->error);
         }
     }
-    //success
+   //success
+   if($newreviews >=1) {
+    $name = "Google Review Bot";
+    $msg = "New Reviews: " . $newreviews;
+    defaultRocketChat($name,$msg);
+}
+//print
     echo "New Reviews: " . $newreviews;
 } else {
     //error
+    $name = "Google Review Bot - ERROR!";
+    $msg = "ERROR! Status: " . $status . ". No. Reviews: " . $no_reviews;
+    defaultRocketChat($name,$msg);
+    //print
     echo "ERROR! Status: " . $status . ". No. Reviews: " . $no_reviews;
 }?>
