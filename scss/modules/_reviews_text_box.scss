@@ -1,0 +1,31 @@
+.review-text-box{
+    display: flex;
+    
+}
+
+.review-author-profile-img{
+    max-width: 50px;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+.review-body{
+    padding: 0.5rem;
+}
+
+.review-text{
+    line-height: 1.5rem;
+    
+}
+
+.star-color{
+    color: rgba(207, 207, 207, 0.514);
+    font-size: 1rem;
+}
+.star-color-rated{
+    color: #f9b805;
+}
+
+.review-time{
+    color: rgb(121, 121, 121);
+}
