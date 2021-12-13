@@ -26,8 +26,8 @@ $user_ip = getUserIP();
 $allowed_ip = array('127.0.0.1', '149.255.59.20','90.207.203.133');
 if (!isset($user_ip) || !in_array($user_ip, $allowed_ip)) {
     
-    //echo "<div style='text-align:center;font-size: 32px;font-weight:bold;'>403 Forbidden</div>";
-    //header($_SERVER['SERVER_PROTOCOL'].' 403 Forbidden');
+    echo "<div style='text-align:center;font-size: 32px;font-weight:bold;'>403 Forbidden</div>";
+    header($_SERVER['SERVER_PROTOCOL'].' 403 Forbidden');
     exit;
 }
 
