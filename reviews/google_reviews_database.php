@@ -54,7 +54,7 @@ function defaultRocketChat($name,$msg) {
 // LBA Business reviews
 $placeid = "ChIJReBlEir510cRYIV3Yjs3hbk"; // https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder#maps_places_placeid_finder-javascript
 
-$apikey = "AIzaSyBzvazSCRnX-e9GJ2_NUqvPMR1r3BWipDs"; // https://console.cloud.google.com/google/maps-apis/credentials
+include("api-key.php");
 
 $url = 'https://maps.googleapis.com/maps/api/place/details/json?reference=' . $placeid . '&key=' . $apikey . '&fields=review';
 
