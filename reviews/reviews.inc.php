@@ -2,12 +2,9 @@
 //public page
 
 //db connection
-$host="localhost";
-$uname="root";
-$pass="";
-$database = "reviews";
+include("../php/connect.php");
 
-$conn = new mysqli($host,$uname,$pass,$database) or die("Database Connection Failed");?>
+$db = new mysqli($host,$uname,$pass,$database) or die("Database Connection Failed");?>
 
     
        
@@ -15,7 +12,7 @@ $conn = new mysqli($host,$uname,$pass,$database) or die("Database Connection Fai
                 <div class="slider">
                     <?php $sql = "SELECT * FROM reviews ORDER BY date_time DESC"; 
                         $img = ['profile_photo_url'];
-                        $result = $conn->query($sql) or die($conn->error);
+                        $result = $db->query($sql) or die($db->error);
                         while($review = mysqli_fetch_array($result)){?>
                         <div class="review">
                              <div class="review-text-box">
