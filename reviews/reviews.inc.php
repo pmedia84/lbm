@@ -4,7 +4,7 @@
 //db connection
 include("php/connect.php");
 
-$db = new mysqli($host,$uname,$pass,$database) or die("Database Connection Failed");?>
+$db = new mysqli($DATABASE_HOST,$DATABASE_USER,$DATABASE_PASS,$DATABASE_NAME) or die("Database Connection Failed");?>
 
     
        
