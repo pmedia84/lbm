@@ -95,31 +95,30 @@ if($status == "OK") {
 }
 
 //db connection
-$host="localhost";
-$uname="root";
-$pass="";
-$database = "reviews";
 
-$conn = new mysqli($host,$uname,$pass,$database) or die("Database Connection Failed");
+include("../php/connect.php");
+
+
+$db = new mysqli($DATABASE_HOST,$DATABASE_USER,$DATABASE_PASS,$DATABASE_NAME) or die("Database Connection Failed");
 
 $newreviews = 0;
 if($state == true && $no_reviews >= 1) {
     foreach ($reviews as $review) {
-        $author_name = $conn->escape_string($review['author_name']);
+        $author_name = $db->escape_string($review['author_name']);
         $author_url = $review['author_url'];
-        $profileimg = $conn->real_escape_string($review['profile_photo_url']);
-        $rating = $conn->escape_string($review['rating']);
-        $relative_time = $conn->escape_string($review['relative_time_description']);
-        $text = $conn->escape_string($review['text']);
-        $time = $conn->escape_string($review['time']);
+        $profileimg = $db->real_escape_string($review['profile_photo_url']);
+        $rating = $db->escape_string($review['rating']);
+        $relative_time = $db->escape_string($review['relative_time_description']);
+        $text = $db->escape_string($review['text']);
+        $time = $db->escape_string($review['time']);
         $date = date('Y-m-d H:i:s', $time);
         
         $sql = "SELECT * FROM reviews WHERE author_name = '$author_name' and date_time = '$date'";
-        $result = $conn->query($sql) or die($conn->error);
+        $result = $db->query($sql) or die($db->error);
         $match = $result->num_rows;
         if($match == 0) {
             $newreviews++;
-            mysqli_query($conn, "INSERT INTO `reviews` (author_name,author_url,profile_photo_url,rating,relative_time,text,date_time) VALUES ('$author_name','$author_url','$profileimg','$rating','$relative_time','$text','$date')") or die($conn->error);
+            mysqli_query($db, "INSERT INTO `reviews` (author_name,author_url,profile_photo_url,rating,relative_time,text,date_time) VALUES ('$author_name','$author_url','$profileimg','$rating','$relative_time','$text','$date')") or die($db->error);
         }
     }
     //success
