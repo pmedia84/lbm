@@ -23,7 +23,7 @@ function getUserIP() {
 }
 //get user IP
 $user_ip = getUserIP();
-$allowed_ip = array('127.0.0.1', '172.16.1.100');
+$allowed_ip = array('127.0.0.1', '149.255.59.20');
 if (!isset($user_ip) || !in_array($user_ip, $allowed_ip)) {
     session_destroy();
     echo "<div style='text-align:center;font-size: 32px;font-weight:bold;'>403 Forbidden</div>";
