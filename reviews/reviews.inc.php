@@ -2,7 +2,7 @@
 //public page
 
 //db connection
-include("../php/connect.php");
+include("php/connect.php");
 
 $db = new mysqli($host,$uname,$pass,$database) or die("Database Connection Failed");?>
 
