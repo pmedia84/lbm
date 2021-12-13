@@ -34,7 +34,7 @@ if (!isset($user_ip) || !in_array($user_ip, $allowed_ip)) {
 function defaultRocketChat($name,$msg) {
     define('ROCKETCHAT_WEBHOOK1', 'https://rc.jonathanallen.org.uk/hooks/tYLcoeH3hniq4q74b/gmy3bbK6WwLKRRLwjmRtkt63EcK58EDCTziYbgKeBmBKxZs5');
     // Make your message
-    $message = json_encode(array('alias' => $name,'avatar' => 'https://spearheadit.org.uk/assets/img/logo.png','msg' => $msg));
+    $message = json_encode(array('alias' => $name,'avatar' => 'https://parrotmedia.co.uk/img/g18159.png','msg' => $msg));
     // Use curl to send your message
     $c = curl_init(ROCKETCHAT_WEBHOOK1);
     curl_setopt($c, CURLOPT_SSL_VERIFYPEER, false);
