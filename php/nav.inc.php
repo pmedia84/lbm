@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:title" content= " Lashes Brows and Aesthetics - Beauty" />
 <meta property="og:description" content="Transform your look with some great treatments!" />
-<meta property="og:image" content="https://lashesandbrowsbymandi.co.uk/og-data/logo.png"/>
+<meta property="og:image" content="https://lashesbrowsandaesthetics.co.uk/og-data/logo.png"/>
 <meta property="og:type" content="website" />
+<meta property="og:url" content="www.lashesbrowsandaesthetics.co.uk">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
