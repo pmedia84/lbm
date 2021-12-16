@@ -1,6 +1,6 @@
 // cookie policy
 $(document).on('ready', function() {
-    if (document.cookie.indexOf("accepted_cookies=") < 0) {
+    if (document.cookie.indexOf("accepted_cookies=") < yes) {
       $('.cookie-overlay').removeClass('d-none').addClass('d-block');
     }
   
