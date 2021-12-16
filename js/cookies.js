@@ -5,7 +5,7 @@ $(document).on('ready', function() {
     }
   
     $('.accept-cookies').on('click', function() {
-      document.cookie = "accepted_cookies=yes; Secure; path=/; max-age= "+ 30*24*60*60; 
+      document.cookie = "accepted_cookies=yes; Secure; path=/;"
       $('.cookie-overlay').removeClass('d-block').addClass('d-none');
     })
   
