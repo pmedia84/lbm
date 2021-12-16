@@ -1,3 +1,4 @@
+
 <footer>
 
 
@@ -26,10 +27,9 @@
 
 
 </footer>
-
+<?php include("cookie/cookie-policy.inc.php");?>
 <script src="js/nav.js"></script>
-<script src="js/flickity.pkgd.min.js"> </script>
-
+<script src="js/cookies.js"></script>
 </body>
 
 </html>
