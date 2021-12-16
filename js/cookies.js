@@ -5,7 +5,7 @@ $(document).on('ready', function() {
     }
   
     $('.accept-cookies').on('click', function() {
-      document.cookie = "accepted_cookies=yes Secure; HttpOnly;"
+      document.cookie = "accepted_cookies=yes Secure;"
       $('.cookie-overlay').removeClass('d-block').addClass('d-none');
     })
   
