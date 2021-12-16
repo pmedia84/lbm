@@ -9,7 +9,7 @@ $(document).on('ready', function() {
       $('.cookie-overlay').removeClass('d-block').addClass('d-none');
     })
   
-    // expand depending on your needs
+   
     $('.close-cookies').on('click', function() {
       $('.cookie-overlay').removeClass('d-block').addClass('d-none');
     })
