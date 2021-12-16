@@ -1,11 +1,11 @@
 // cookie policy
 $(document).on('ready', function() {
-    if (document.cookie.indexOf("accepted_cookies=yes") < 0) {
+    if (document.cookie.indexOf("accepted_cookies=") < 0) {
       $('.cookie-overlay').removeClass('d-none').addClass('d-block');
     }
   
     $('.accept-cookies').on('click', function() {
-      document.cookie = "accepted_cookies=yes Secure;"
+      document.cookie = "accepted_cookies=yes; Secure;"
       $('.cookie-overlay').removeClass('d-block').addClass('d-none');
     })
   
