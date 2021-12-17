@@ -76,14 +76,13 @@ if (!$email) {
    $row = mysqli_num_rows($results);
    if ($row==""){
    $error .= "<p>No user is registered with this email address!</p>";
-   
    }
   }
-   if(!$error=""){
+   if($error!=""){
    echo "<div class='error'>".$error."
    <p>No user is registered with this email address!</p>
    <br /><a href='javascript:history.go(-1)'>Go Back</a></div>";
-
+   echo $_POST["email"];
    }else{
    $expFormat = mktime(
    date("H"), date("i"), date("s"), date("m") ,date("d")+1, date("Y")
@@ -150,7 +149,7 @@ echo "
 <h1>Reset your password here</h1>
 <p class="tabcontent-textbox">If you are having problems logging in to your account then enter your email address below, and we will send you instructions to reset your password.</p>
 
-	<form onsubmit="return stayontab" action="" method="post" autocomplete="off">
+	<form  action="" method="post" name="reset" autocomplete="off">
 		
 		<div class="inputwrapper admin-wrapper">
 
@@ -158,7 +157,7 @@ echo "
 				<span class="input-prepend-text"><i class="fas fa-at"></i></span>
 			</div>
 
-			<input class="text-input input" type="email" name="email" placeholder="Email Address" id="username" autocomplete="off" required>
+			<input class="text-input input" type="email" name="email" placeholder="Email Address" id="email" autocomplete="off" required>
 		</div>
 
 
@@ -175,7 +174,7 @@ echo "
 
 
 
-<?php } ?>
+<?php  } ?>
 	
 			</div>
 </div>
