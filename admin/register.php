@@ -137,7 +137,7 @@ if ($stmt = $db->prepare('SELECT id, password FROM accounts WHERE username = ?')
 $subject = 'Account Activation Required';
 
 // Update the activation variable below
-$activate_link = 'http://localhost/lbm/admin/activate.php?email=' . $_POST['email'] . '&code=' . $uniqid;
+$activate_link = 'https://www.lashesbrowsandaesthetics.co.uk/admin/activate.php?email=' . $_POST['email'] . '&code=' . $uniqid;
 $body = '<p>Please click the following link to activate your account: <a href="' . $activate_link . '">' . $activate_link . '</a></p>';
 
 $email_to = $_POST['email'];

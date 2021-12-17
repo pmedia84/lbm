@@ -100,7 +100,7 @@ VALUES ('".$email."', '".$key."', '".$expDate."');");
 $output='<p>Dear user,</p>';
 $output.='<p>Please click on the following link to reset your password.</p>';
 $output.='<p>-------------------------------------------------------------</p>';
-$output.='<p><a href="http://localhost/lbm/admin/resetpw.php?key='.$key.'&email='.$email.'&action=reset" target="_blank">
+$output.='<p><a href="https://www.lashesbrowsandaesthetics.co.uk/admin/resetpw.php?key='.$key.'&email='.$email.'&action=reset" target="_blank">
 http://localhost/lbm/admin/resetpw.php
 ?key='.$key.'&email='.$email.'&action=reset</a></p>';		
 $output.='<p>-------------------------------------------------------------</p>';
