@@ -39,7 +39,7 @@ Click here</a> to reset password.</p>';
                   <span class="input-prepend-text"><i class="fas fa-key"></i></span>
               </div>
     
-              <input class="text-input input" type="text" name="pass1" placeholder="Enter New Password" id="pass1" maxlength="15" required>
+              <input class="text-input input" type="password" name="pass1" placeholder="Enter New Password" id="pass1" maxlength="15" required>
           </div>
           <label for="pass2">Re-Enter New Password</label>
           <div class="inputwrapper admin-wrapper">
@@ -48,7 +48,7 @@ Click here</a> to reset password.</p>';
                   <span class="input-prepend-text"><i class="fas fa-key"></i></span>
               </div>
     
-              <input class="text-input input" type="text" name="pass2" placeholder="Enter New Password" id="pass2" maxlength="15" required>
+              <input class="text-input input" type="password" name="pass2" placeholder="Enter New Password" id="pass2" maxlength="15" required>
           </div>
     <input type="hidden" name="email" value="<?php echo $email;?>"/>
     <input type="submit" value="Reset Password" />
