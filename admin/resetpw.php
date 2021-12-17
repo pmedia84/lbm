@@ -96,7 +96,7 @@ WHERE `email`='".$email."';"
 
 mysqli_query($db,"DELETE FROM `password_reset_temp` WHERE `email`='".$email."';");
 	
-echo '<div class="error"><p>Congratulations! Your password has been updated successfully.</p>
+echo '<div class="error container"><p>Congratulations! Your password has been updated successfully.</p>
 <p><a href="login">
 Click here</a> to Login.</p></div><br />';
 	  }		
