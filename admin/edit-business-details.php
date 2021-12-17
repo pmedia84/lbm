@@ -18,7 +18,7 @@ if (isset($_GET['id'])) {
         // Update the record
         $stmt = $pdo->prepare('UPDATE details SET id = ?, business_name = ?, tel_num = ?, email = ?, address = ?, postcode = ? WHERE id = ?');
         $stmt->execute([$id, $business_name, $tel_num, $email, $address, $postcode, $_GET['id']]);
-        $msg = 'Updated Successfully!, For the changes to take affect. Please Log Out and Log back in';
+        $msg = 'Updated Successfully!';
     
     
     }
