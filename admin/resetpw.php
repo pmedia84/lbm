@@ -28,7 +28,7 @@ Click here</a> to reset password.</p>';
   <br />
 
   <div class="container update">
-    <h1>Reset Your Password</h1>
+    <h1 style="text-align: center;">Reset Your Password</h1>
     <form method="post" action="" name="update">
     <input type="hidden" name="action" value="update" />
     <br /><br />
