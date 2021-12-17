@@ -27,7 +27,7 @@ Click here</a> to reset password.</p>';
   ?>
   <br />
 
-  <div class="container">
+  <div class="container update">
     <form method="post" action="" name="update">
     <input type="hidden" name="action" value="update" />
     <br /><br />
