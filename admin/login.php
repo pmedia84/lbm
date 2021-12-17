@@ -122,7 +122,7 @@ $mail->IsSMTP();
 $mail->Host = "mail.lashesbrowsandaesthetics.co.uk"; // Enter your host here
 $mail->SMTPAuth = true;
 $mail->Username = "admin@lashesbrowsandaesthetics.co.uk"; // Enter your email here
-$mail->Password = "LBA_2021!"; //Enter your password here
+$mail->Password = "@BJDK;[HR~p"; //Enter your password here
 $mail->Port = 25;
 $mail->IsHTML(true);
 $mail->From = "admin@lashesbrowsandaesthetics.co.uk";
