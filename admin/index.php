@@ -74,13 +74,14 @@ $stmt->close();
 			<p>User Profile</p>
 				<i class="fas fa-user dashboard-icon"></i>
 				<p><?= $_SESSION['name'] ?></p>
-			<a href="profile">Edit Profile</a>
+			<a href="edit-user.php?id=<?=$_SESSION['id']?>">Edit Profile</a>
 			</div>
 		
 			<div class="dashboard-icon-wrapper">
 			<p>Business Profile</p>
 			<i class="fas fa-building dashboard-icon"></i>
-			<a href="price-list">Edit Profile</a>
+			<p><?=$name ?> </p>
+			<a href="edit-business-details.php?id=<?=$id?>">Edit Business Details</a>
 			</div>
 
 			<div class="dashboard-icon-wrapper">
@@ -91,14 +92,14 @@ $stmt->close();
 </section>
 	<section class="navadmin container">
 		<div>
-			<h1>Your Account Details: <?= $_SESSION['name'] ?></h1>
+			<h1>Welcome Back <?= $_SESSION['name'] ?></h1>
 
 		</div>
 	</section>
 	<div class="container">
 		<p>Your Profile</p>
 		<div>
-			<p>Your account details are below:</p>
+			
 			<table>
 				<tr>
 					<td>Username:</td>
@@ -109,11 +110,12 @@ $stmt->close();
 					<td>Email:</td>
 					<td><?= $email ?></td>
 				</tr>
-			</table>
+			</table><br>
+			<a href="edit-user.php?id=<?=$_SESSION['id']?>">Edit Profile</a>
 		</div>
-		<a href="registernewuser">Register a new user</a><br>
+		
 
-		<p>Need to reset your password? You can do that <a href="login" >Here</a></p>
+		
 
 
 		
@@ -141,57 +143,12 @@ $stmt->close();
 					<td><?= $email ?></td>
 				</tr>
 
-			</table>
+			</table><br>
+			<a href="edit-business-details.php?id=<?=$id?>">Edit Business Details</a>
 		</div>
 	</div>
 
 
-	<div class="container">
-		<?php
-
-
-
-		$product = "SELECT * FROM product";
-		$product = mysqli_query($db, $product);
-		$rowcount = mysqli_num_rows($product);
-
-
-		?>
-
-		<h2>Your Price List</h2>
-		<p>You have <?= $rowcount ?> items in your price list.</p>
-		<a href="price-list">You can manage you price list here.</a>
-
-
-		<div class="index-price-table">
-			<table>
-				<thead>
-					<tr>
-
-						<th class="name">Name</th>
-
-						<th>Description</th>
-						<th class="price">Price</th>
-
-
-					</tr>
-				</thead>
-				<tbody>
-					<?php foreach ($product as $product) : ?>
-						<tr>
-
-							<td><?= $product['name'] ?></td>
-
-							<td><?= $product['description'] ?></td>
-							<td>£<?= $product['price'] ?></td>
-
-
-						</tr>
-					<?php endforeach; ?>
-				</tbody>
-			</table>
-		</div>
-	</div>
 
 
 	<?php include("footer-admin.inc.php"); ?>

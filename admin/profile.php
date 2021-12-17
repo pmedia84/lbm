@@ -36,16 +36,17 @@ $stmt->close();
 						<td>Username:</td>
 						<td><?=$_SESSION['name']?></td>
 					</tr>
-					<tr>
-						<td>Password:</td>
-						<td><?=$password?></td>
-					</tr>
+					
 					<tr>
 						<td>Email:</td>
 						<td><?=$email?></td>
 					</tr>
 				</table>
 			</div>
+			<p><a href="edit-user.php?id=<?=$_SESSION['id']?>">Edit Profile</a></p>
+			<p><a href="registernewuser">Register a new user</a></p>
+
+<p>Need to reset your password? You can do that <a href="login" >Here</a></p>
 		</div>
 
         <?php include("footer-admin.inc.php");?>
