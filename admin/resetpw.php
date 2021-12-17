@@ -1,4 +1,7 @@
+
+
 <?php
+include("nav-login.inc.php");
 include('../php/connect.php');
 if (isset($_GET["key"]) && isset($_GET["email"]) && isset($_GET["action"]) 
 && ($_GET["action"]=="reset") && !isset($_POST["action"])){
@@ -20,25 +23,46 @@ Click here</a> to reset password.</p>';
   $row = mysqli_fetch_assoc($query);
   $expDate = $row['expDate'];
   if ($expDate >= $curDate){
+    
   ?>
   <br />
   <form method="post" action="" name="update">
   <input type="hidden" name="action" value="update" />
   <br /><br />
-  <label><strong>Enter New Password:</strong></label><br />
-  <input type="password" name="pass1" maxlength="15" required />
-  <br /><br />
-  <label><strong>Re-Enter New Password:</strong></label><br />
-  <input type="password" name="pass2" maxlength="15" required/>
-  <br /><br />
+  <label for="pass1">Enter New Password</label>
+        <div class="inputwrapper admin-wrapper">
+        
+            <div class="input-prepend">
+                <span class="input-prepend-text"><i class="fas fa-key"></i></span>
+            </div>
+            
+            <input class="text-input input" type="text" name="pass1" placeholder="Enter New Password" id="pass1" maxlength="15" required>
+        </div>
+
+        <label for="pass2">Re-Enter New Password</label>
+        <div class="inputwrapper admin-wrapper">
+        
+            <div class="input-prepend">
+                <span class="input-prepend-text"><i class="fas fa-key"></i></span>
+            </div>
+            
+            <input class="text-input input" type="text" name="pass2" placeholder="Enter New Password" id="pass2" maxlength="15" required>
+        </div>
   <input type="hidden" name="email" value="<?php echo $email;?>"/>
   <input type="submit" value="Reset Password" />
   </form>
+
+
+
+
+
+
+
 <?php
 }else{
 $error .= "<h2>Link Expired</h2>
-<p>The link is expired. You are trying to use the expired link which 
-as valid only 24 hours (1 days after request).<br /><br /></p>";
+<p>The link has expired. You are trying to use an expired link which 
+is valid only for 24 hours (1 day after the request).<br /><br /></p>";
             }
       }
 if($error=""){
@@ -75,3 +99,5 @@ Click here</a> to Login.</p></div><br />';
 	  }		
 }
 ?>
+
+<?php include("footer-admin.inc.php");?>
