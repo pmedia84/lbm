@@ -133,7 +133,7 @@ if ($stmt = $db->prepare('SELECT id, password FROM accounts WHERE username = ?')
     $stmt->bind_param('ssss', $_POST['username'], $password, $_POST['email'], $uniqid);
 
 	$stmt->execute();
-	$fromserver    = 'noreply@yourdomain.com';
+	$fromserver    = 'admin@lashesbrowsandaesthetics.co.uk';
 $subject = 'Account Activation Required';
 
 // Update the activation variable below
