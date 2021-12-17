@@ -84,11 +84,7 @@ $stmt->close();
 			<a href="edit-business-details.php?id=<?=$id?>">Edit Business Details</a>
 			</div>
 
-			<div class="dashboard-icon-wrapper">
-			<p>Users</p>
-			<i class="fas fa-users dashboard-icon"></i>
-			<a href="price-list">Edit Users</a>
-			</div>
+
 </section>
 	<section class="navadmin container">
 		<div>
