@@ -129,7 +129,7 @@
             <div class="contactdetails">
                 <h3 class="contact-title">You Can Find Me Here</h3>
                 <ul class="fa-ul">
-                    <li><span class="fa-li"><i class="fas fa-map-marker"></i></span>Beaut Hair Design, 16 Little London, Long Sutton, PE12 9LE</li>
+                    <li><span class="fa-li"><i class="fas fa-map-marker"></i></span>Escape Hair Dressers, Unit 7 Wrights Mews, 12a Park Road. Holbeach, PE12 7EE</li>
                     <li><span class="fa-li"><i class="fas fa-mobile-alt"></i></i></span>07827 962740</li>
 
                 </ul>
