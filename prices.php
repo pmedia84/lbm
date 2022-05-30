@@ -94,7 +94,7 @@
             </div>
 
             <p class="bannertext mt-b-1">Infills to be done within 3 weeks of having a full set and over 50% of lashes remaining</p>
-            <p class="bannertext">A £25 non refundable booking fee, is taken on the day of your patch test, but it is taken off the cost on the day of your treatment.</p>
+            <p class="bannertext">There is a £25 booking fee for all treatments over £30 which will be deducted off your treatment price.</p>
         </div>
 
         <div id="brows" class="tabcontent">

@@ -1220,7 +1220,7 @@ td {
 }
 
 .pricehero {
-  background-image: url("../img/price-hero.jpg");
+  background-image: url("../img/price-hero.webp");
   background-color: #fcc5c5;
   background-blend-mode: multiply;
   max-height: 50vh;
