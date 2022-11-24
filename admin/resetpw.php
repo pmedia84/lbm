@@ -25,13 +25,13 @@ Click here</a> to reset password.</p>';
   if ($expDate >= $curDate){
     
   ?>
-  <br />
+  <br/>
 
   <div class="container update">
     <h1 style="text-align: center;">Reset Your Password</h1>
     <form method="post" action="" name="update">
     <input type="hidden" name="action" value="update" />
-    <br /><br />
+    <br/><br/>
     <label for="pass1">Enter New Password</label>
           <div class="inputwrapper admin-wrapper">
     
